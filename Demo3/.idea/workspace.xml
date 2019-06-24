@@ -1,0 +1,1308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Demo3:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9bfd244c-4d5b-4599-9005-cb094840e53f" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/ExpenditureDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/ExpenditureMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/service/ExpenditureService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/ExpenditureServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/test/ExpenditureMapperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="661">
+              <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/ExpenditureController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/IncomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/service/IncomeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Expenditure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="35" />
+              <folding>
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>arr</find>
+      <find>id</find>
+      <find>lis</find>
+      <find>eot</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/management/service/ClientService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/client.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/supplier.js" />
+        <option value="$PROJECT_DIR$/src/main/java/management/controller/SupplierController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/controller/ClientController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/AdministratorService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
+        <option value="$PROJECT_DIR$/src/main/java/management/pojo/Device.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/pojo/Flow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/pojo/Staff.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/device.js" />
+        <option value="$PROJECT_DIR$/src/main/java/management/mapping/DeviceMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/dao/FlowDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/mapping/FlowMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/util/UserContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/ClientServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/DeviceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/FlowServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/StaffServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/SupplierServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/test/FlowAndWarehouseMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/AdministratorServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/interceptor/CheckLoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/management/controller/AdministratorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/SalaryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/pojo/Salary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/mapping/SalaryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/dao/StaffDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/mapping/StaffMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/test/SalaryMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/SalaryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/controller/SalaryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/dao/SalaryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/pojo/Income.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/IncomeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/mapping/IncomeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/IncomeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/IncomeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/test/IncomeMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/dao/IncomeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/controller/IncomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/pojo/Expenditure.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/dao/ExpenditureDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/ExpenditureService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/ExpenditureServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/test/ExpenditureMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/mapping/ExpenditureMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/controller/ExpenditureController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/maven/apache-maven-3.6.0" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-172" />
+    <option name="y" value="82" />
+    <option name="width" value="1935" />
+    <option name="height" value="950" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../experiment1" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp" />
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\WEB-INF" />
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\WEB-INF\views" />
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\js" />
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\jsp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\js" />
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp" />
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\css" />
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\images" />
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\css\main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ExpenditureMapperTest.test1">
+    <configuration name="ExpenditureMapperTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="management.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="management.test" />
+      <option name="MAIN_CLASS_NAME" value="management.test.ExpenditureMapperTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenditureMapperTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="management.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="management.test" />
+      <option name="MAIN_CLASS_NAME" value="management.test.ExpenditureMapperTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenditureMapperTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="management.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="management.test" />
+      <option name="MAIN_CLASS_NAME" value="management.test.ExpenditureMapperTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenditureMapperTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="management.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="management.test" />
+      <option name="MAIN_CLASS_NAME" value="management.test.ExpenditureMapperTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncomeMapperTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="management.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="management.test" />
+      <option name="MAIN_CLASS_NAME" value="management.test.IncomeMapperTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 7.0.91" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.91" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.html" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Demo3:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Demo3" />
+      </server-settings>
+      <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55387" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Demo3:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 7.0.91" />
+      <item itemvalue="JUnit.IncomeMapperTest.test1" />
+      <item itemvalue="JUnit.ExpenditureMapperTest.test2" />
+      <item itemvalue="JUnit.ExpenditureMapperTest.test3" />
+      <item itemvalue="JUnit.ExpenditureMapperTest.test4" />
+      <item itemvalue="JUnit.ExpenditureMapperTest.test1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ExpenditureMapperTest.test1" />
+        <item itemvalue="JUnit.ExpenditureMapperTest.test4" />
+        <item itemvalue="JUnit.ExpenditureMapperTest.test3" />
+        <item itemvalue="JUnit.ExpenditureMapperTest.test2" />
+        <item itemvalue="JUnit.IncomeMapperTest.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bfd244c-4d5b-4599-9005-cb094840e53f" name="Default Changelist" comment="" />
+      <created>1558080997452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558080997452</updated>
+      <workItem from="1558081000933" duration="14228000" />
+      <workItem from="1558236943497" duration="591000" />
+      <workItem from="1558350382937" duration="8138000" />
+      <workItem from="1558440016438" duration="10008000" />
+      <workItem from="1558508543478" duration="7505000" />
+      <workItem from="1558524121627" duration="8825000" />
+      <workItem from="1558958274514" duration="14202000" />
+      <workItem from="1559027412978" duration="17359000" />
+      <workItem from="1559220894843" duration="6096000" />
+      <workItem from="1559648074992" duration="586000" />
+      <workItem from="1560412035185" duration="19606000" />
+      <workItem from="1560670602952" duration="3682000" />
+      <workItem from="1560770891292" duration="12435000" />
+      <workItem from="1560839967745" duration="20821000" />
+      <workItem from="1560863433017" duration="7657000" />
+      <workItem from="1560929428473" duration="760000" />
+      <workItem from="1560945421548" duration="10279000" />
+      <workItem from="1561017876327" duration="3978000" />
+      <workItem from="1561255511509" duration="23000" />
+      <workItem from="1561277801963" duration="9668000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="IncomeMapperTest_test2 - 2019.06.23 at 18h 09m 21s.xml">
+      <configuration name="IncomeMapperTest.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IncomeMapperTest_test2 - 2019.06.23 at 18h 13m 23s.xml">
+      <configuration name="IncomeMapperTest.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IncomeMapperTest_test3 - 2019.06.23 at 18h 13m 39s.xml">
+      <configuration name="IncomeMapperTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IncomeMapperTest_test4 - 2019.06.23 at 18h 13m 50s.xml">
+      <configuration name="IncomeMapperTest.test4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IncomeMapperTest_test1 - 2019.06.23 at 18h 16m 15s.xml">
+      <configuration name="IncomeMapperTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenditureMapperTest_test2 - 2019.06.23 at 20h 21m 35s.xml">
+      <configuration name="ExpenditureMapperTest.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenditureMapperTest_test2 - 2019.06.23 at 20h 22m 41s.xml">
+      <configuration name="ExpenditureMapperTest.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenditureMapperTest_test3 - 2019.06.23 at 20h 22m 57s.xml">
+      <configuration name="ExpenditureMapperTest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenditureMapperTest_test4 - 2019.06.23 at 20h 23m 12s.xml">
+      <configuration name="ExpenditureMapperTest.test4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExpenditureMapperTest_test1 - 2019.06.23 at 20h 23m 29s.xml">
+      <configuration name="ExpenditureMapperTest.test1" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="176447000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-137" y="66" width="1548" height="760" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23691276" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32673267" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38314787" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290938" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32750398" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3290938" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3290938" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32750398" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/ClientServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/DeviceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/SupplierServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/test/FlowAndWarehouseMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/AdministratorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/util/UserContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/userinfo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/interceptor/CheckLoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/AdministratorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/FlowDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/WarehouseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/ClientMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/SalaryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/FlowServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/StaffServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Staff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/SalaryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/StaffDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/StaffMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="30" column="71" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/SalaryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/test/SalaryMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/StaffController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/SalaryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/SalaryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/ClientDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Salary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Income.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk1.8.0_201/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-678">
+          <caret line="195" column="11" selection-start-line="195" selection-start-column="11" selection-end-line="195" selection-end-column="11" />
+          <folding>
+            <element signature="e#6390#6391#0" expanded="true" />
+            <element signature="e#6438#6439#0" expanded="true" />
+            <element signature="e#7577#7578#0" expanded="true" />
+            <element signature="e#7625#7626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/IncomeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/test/IncomeMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/IncomeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/AdministratorMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="15" lean-forward="true" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/IncomeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Expenditure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/ExpenditureDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/IncomeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/ExpenditureService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/ExpenditureServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/ExpenditureMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/test/ExpenditureMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/IncomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/ExpenditureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Demo3:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (Demo3)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|Demo3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

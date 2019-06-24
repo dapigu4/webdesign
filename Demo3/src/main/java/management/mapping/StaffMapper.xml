@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.StaffDao">
+<!--    查看某个员工信息-->
+    <select id="showStaffInfoByName" parameterType="management.pojo.Staff" resultType="Staff">
+        select * from staff where name = #{name}
+    </select>
+<!--    新增员工-->
+    <insert id="addStaff" parameterType="management.pojo.Staff" >
+        insert into staff value (NULL,#{number},#{name},#{sex},#{phone},#{address},#{email},#{hiredate})
+    </insert>
+<!--    删除员工-->
+    <delete id="removeStaffByName" parameterType="management.pojo.Staff" >
+        delete from staff where name = #{name}
+    </delete>
+<!--    查看全部-->
+    <select id="showAllStaff"  resultType="Staff">
+        select * from staff
+    </select>
+<!--    根据员工编号来查看-->
+    <select id="showStaffInfoByNumber" parameterType="management.pojo.Staff" resultType="Staff">
+        select * from staff where number = #{number}
+    </select>
+<!--   根据编号来删除员工 -->
+    <delete id="removeStaffByNumber" parameterType="management.pojo.Staff" >
+        delete from staff where number = #{number}
+    </delete>
+    <select id="showStaffInfoByNameAndNumber" parameterType="management.pojo.Staff" resultType="Staff">
+        select * from staff where name = #{name} and number = #{number}
+    </select>
+</mapper>

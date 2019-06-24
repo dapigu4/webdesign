@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.SupplierDao">
+    <resultMap id="supplierResultMap" type="Supplier">
+        <id property="id" column="id"/>
+        <id property="supplierName" column="supplier_name"/>
+        <id property="supplierContact" column="supplier_contact"/>
+        <id property="supplierPhone" column="supplier_phone"/>
+        <id property="supplierAddress" column="supplier_address"/>
+        <id property="supplierSex" column="supplier_sex"/>
+        <id property="supplierEmail" column="supplier_email"/>
+    </resultMap>
+    <select id="showSupplier" resultMap="supplierResultMap">
+        select * from supplier
+    </select>
+
+    <insert id="addSupplier" parameterType="Supplier">
+        insert into supplier value (NULL,#{supplierName},#{supplierContact},#{supplierSex},#{supplierPhone},#{supplierEmail},#{supplierAddress})
+    </insert>
+
+    <delete id="removeSupplier" parameterType="Supplier">
+        delete from supplier where supplier_name = #{supplierName}
+    </delete>
+
+    <select id="findSupplier" parameterType="Supplier" resultMap="supplierResultMap">
+        select * from supplier where supplier_name = #{supplierName}
+    </select>
+
+</mapper>

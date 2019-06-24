@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.ClientDao">
+    <resultMap id="clientResultMap" type="Client">
+        <id property="id" column="id"/>
+        <id property="clientName" column="client_name"/>
+        <id property="clientContact" column="client_contact"/>
+        <id property="clientPhone" column="client_phone"/>
+        <id property="clientAddress" column="client_address"/>
+        <id property="clientSex" column="client_sex"/>
+        <id property="clientEmail" column="client_email"/>
+    </resultMap>
+    <select id="showClient" resultMap="clientResultMap">
+        select * from client
+    </select>
+
+    <insert id="addClient" parameterType="Client">
+        insert into client value (NULL,#{clientName},#{clientContact},#{clientSex},#{clientPhone},#{clientEmail},#{clientAddress})
+    </insert>
+
+    <delete id="removeClient" parameterType="Client">
+        delete from client where client_name = #{clientName}
+    </delete>
+
+
+    <select id="findClient" parameterType="Client" resultMap="clientResultMap">
+        select * from client where client_name = #{clientName}
+    </select>
+</mapper>

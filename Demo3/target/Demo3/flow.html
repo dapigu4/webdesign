@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>出入库</title>
+    <meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/main/basis.css">
+</head>
+<body class="sidebar-fix header-fixed">
+<div class="page-wrapper">
+    <nav class="navbar page-header">
+        <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <a class="navbar-brand" href="#">
+            <img src="" alt="">
+        </a>
+
+        <a class="btn btn-link sidebar-toggle d-md-down-none" href="#">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown">
+                <a class="nav nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="images/tree.jpg" class="avatar avatar-sm" alt="logo">
+                    <span class="small ml-1 d-md-down-none" id="user">用户名</span>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-right" id="nav">
+                    <li>
+                        <div class="dropdown-header">用户</div>
+                    </li>
+                    <li>
+                        <a href="modifypassword.html" class="dropdown-item" id="one">
+                            <i class="fa fa-user"></i>用户详情
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dropdown-header">设置</div>
+                    </li>
+                    <li>
+                        <a href="modifypassword.html" class="dropdown-item" id="two">
+                            <i class="fa fa-cog"></i> 修改密码
+                        </a>
+                    </li>
+                    <li>
+                        <a href="modifypassword.html" class="dropdown-item" id="three">
+                            <i class="fa fa-user-plus"></i> 新增用户
+                        </a>
+                    </li>
+                    <li>
+                        <a href="modifypassword.html" class="dropdown-item" id="four">
+                            <i class="fa fa-user-times"></i> 注销用户
+                        </a>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#quit">
+                            <i class="fa fa-sign-out"></i> 退出用户
+                        </button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-title">功能</li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="#" class="nav-link nav-dropdown-toggle" >
+                            <i class="fa fa-jpy"></i>收支管理<i class="fa fa-caret-left"></i>
+                        </a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a href="income.html" class="nav nav-link" >
+                                    <i class="fa fa-jpy"></i>添加收支明细
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="displayincome.html" class="nav nav-link">
+                                    <i class="fa fa-jpy"></i>查看收支明细
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="index.html" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-truck"></i>库存管理<i class="fa fa-caret-left"></i>
+                        </a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a href="flow.html" class="nav-link active">
+                                    <i class="fa fa-truck"></i>出库/入库
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="warehouse.html" class="nav-link">
+                                    <i class="fa fa-truck"></i>查看仓库
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">
+                                    <i class="fa fa-truck"></i>总览
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="index.html" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-cubes"></i>产品管理<i class="fa fa-caret-left"></i>
+                        </a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a href="product.html" class="nav-link">
+                                    <i class="fa fa-cubes"></i>产品管理
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="index.html" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-link"></i>供应链管理<i class="fa fa-caret-left"></i>
+                        </a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a href="supplier.html" class="nav-link">
+                                    <i class="fa fa-link"></i>供应商管理
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="client.html" class="nav-link">
+                                    <i class="fa fa-link"></i>客户管理
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="index.html" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-desktop"></i>设备管理<i class="fa fa-caret-left"></i>
+                        </a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a href="device.html" class="nav-link">
+                                    <i class="fa fa-desktop"></i>设备管理
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="index.html" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-users"></i>人力资源管理<i class="fa fa-caret-left"></i>
+                        </a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a href="staff.html" class="nav-link">
+                                    <i class="fa fa-users"></i>员工信息管理
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="salary.html" class="nav-link">
+                                    <i class="fa fa-users"></i>工资发放
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-dropdown">
+                        <a href="index.html" class="nav-link nav-dropdown-toggle">
+                            <i class="fa fa-bar-chart"></i>总览<i class="fa fa-caret-left"></i>
+                        </a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">
+                                    <i class="fa fa-bar-chart " ></i>查看总览
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <hr/>
+                        <button type="button" class="nav-link btn" data-toggle="modal" data-target="#backup">
+                            <i class="fa fa-files-o"></i>一键备份
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link btn" data-toggle="modal" data-target="#reduction">
+                            <i class="icon icon-docs"></i>数据还原
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <!-- 导航栏中用户退出部分  -->
+            <div class="modal fade" id="quit" tabindex="-1" role="dialog" aria-labelledby="ModalLabel_q" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel_q">Tip</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p id="con_q">
+                                确定要退出登录吗？
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" value="close">关闭</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_quit" value="sure">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航栏中用户退出部分  -->
+            <!-- 一键备份功能 -->
+            <div class="modal fade" id="backup" tabindex="-1" role="dialog" aria-labelledby="ModalLabel_backup" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel_backup">Tip</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                确定要将所有数据备份吗？
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" value="close">关闭</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_backup" value="sure">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 一键备份功能 -->
+            <!-- 数据还原功能 -->
+            <div class="modal fade" id="reduction" tabindex="-1" role="dialog" aria-labelledby="ModalLabel_reduction" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel_reduction">Tip</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                确定要将将所有数据还原会上一次备份的数据？
+                                若还原，现有数据将丢失。
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" value="close">关闭</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_reduction" value="sure">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 数据还原功能 -->
+            <div class="container-fluid" >
+                <div class="card-header bg-light">
+                    <ul class="nav nav-pills mb-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link show active" id="pills-in-tab" data-toggle="pill" href="#pills-in" role="tab" aria-controls="pills-user" aria-selected="true">填写入库表</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-out-tab" data-toggle="pill" href="#pills-out" role="tab" aria-controls="pills-modify" aria-selected="false">填写出库表</a>
+                        </li>
+                        <!--li class="nav-item">
+                            <a class="nav-link" id="pills-init-tab" data-toggle="pill" href="#pills-init" role="tab" aria-controls="pills-in" aria-selected="false">仓库初始化</a>
+                        </li-->
+                    </ul>
+                </div>
+                <div class="card-body bg-white">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="pills-in-tab" id="pills-in">
+                            <form>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <label for="in_date" class="sr-only">入库日期</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">入库日期</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="in_date" name="day" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <div class="input-group">
+                                                    <label for="in_name" class="sr-only">供应商名称</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">供应商名称</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="in_name" >
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <div class="input-group">
+                                                    <label for="in_count" class="sr-only">入货量</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">入货量</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="in_count" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <label for="in_product" class="sr-only">产品名称</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">产品名称</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="in_product" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <label for="in_type" class="sr-only">产品规格</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">产品规格</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="in_type" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="input-group">
+                                                    <label for="in_money_i" class="sr-only">入货单价</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">入货单价</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="in_money_i" >
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">元</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="input-group">
+                                                    <label for="in_money" class="sr-only">出货单价</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">出货单价</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="in_money" >
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">元</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="input-group">
+                                                    <label for="in_totle" class="sr-only">总价</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">总价</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="in_totle" >
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">元</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <button type="button" class=" btn btn-primary" id="btn_in" data-toggle="modal" data-target="#alert_in" >点击增加记录</button>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="alert_in" tabindex="-1" role="dialog" aria-labelledby="ModalLabel_in" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="ModalLabel_in">Tip</h5>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p id="con_in">
+                                                            </p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="close_in" >确定</button>
+                                                            <button type="button" class="btn btn-primary" style="display: none" data-dismiss="modal" id="sure_in" >确定</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" role="tabpanel" aria-labelledby="pills-out-tab" id="pills-out">
+                            <form>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <label for="out_date" class="sr-only">出货日期</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">出货日期</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="out_date" name="day" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <div class="input-group">
+                                                    <label for="out_name" class="sr-only">客户名称</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">客户名称</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="out_name" >
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <div class="input-group">
+                                                    <label for="out_count" class="sr-only">出货量</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">出货量</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="out_count" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <label for="out_product" class="sr-only">产品名称</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">产品名称</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="out_product" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <label for="out_type" class="sr-only">产品规格</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">产品规格</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="out_type" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="input-group">
+                                                    <label for="out_money_o" class="sr-only">入货单价</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">入货单价</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="out_money_o" >
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">元</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <div class="input-group">
+                                                    <label for="out_money" class="sr-only">出货单价</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">出货单价</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="out_money" >
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">元</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <div class="input-group">
+                                                    <label for="out_totle" class="sr-only">总价</label>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">总价</div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="out_totle" >
+                                                    <div class="input-group-append">
+                                                        <div class="input-group-text">元</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <button type="button" class=" btn btn-primary" id="btn_out" data-toggle="modal" data-target="#alert_out" >点击增加记录</button>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="alert_out" tabindex="-1" role="dialog" aria-labelledby="ModalLabel_out" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="ModalLabel_out">Tip</h5>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p id="con_out">
+                                                            </p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="close_out" >确定</button>
+                                                            <button type="button" class="btn btn-primary" style="display: none" data-dismiss="modal" id="sure_out" >确定</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--div class="tab-pane fade" role="tabpanel" aria-labelledby="pills-init-tab" id="pills-init">
+                            <form>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-row">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <div class="input-group">
+                                            <button type="button" class=" btn btn-primary" id="btn_init" data-toggle="modal" data-target="#alert_init">确定初始化</button>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="alert_init" tabindex="-1" role="dialog" aria-labelledby="ModalLabel_init" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ModalLabel_init">Tip</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p id="con_init">
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="close_init" >确定</button>
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="sure_init" >确定</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-datepicker.zh-CN.min.js"></script>
+<script src="js/chart.min.js"></script>
+<script src="js/carbon.js"></script>
+<script src="js/userinfo.js"></script>
+<script src="js/flow.js"></script>
+</body>
+</html>

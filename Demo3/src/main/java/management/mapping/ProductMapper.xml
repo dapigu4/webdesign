@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.ProductDao">
+    <resultMap id="productResultMap" type="Product">
+        <id property="id" column="id"/>
+        <id property="productName" column="product_name"/>
+        <id property="productSize" column="product_size"/>
+        <id property="productCost" column="product_cost"/>
+        <id property="productSell" column="product_sell"/>
+        <id property="productProfit" column="product_profit"/>
+    </resultMap>
+    <select id="showProduct"  resultMap="productResultMap">
+        select * from product
+    </select>
+
+    <insert id="addProduct" parameterType="Product" >
+        insert into product value (NULL,#{productName},#{productSize},#{productCost},#{productSell},#{productProfit})
+    </insert>
+
+    <delete id="removeProduct" parameterType="Product">
+        delete from product where product_name = #{productName}
+    </delete>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.DeviceDao">
+
+    <resultMap id="deviceResultMap" type="Device">
+        <id property="id" column="id"/>
+        <id property="deviceName" column="device_name"/>
+        <id property="deviceCount" column="device_count"/>
+        <id property="devicePrice" column="device_price"/>
+        <id property="deviceDate" column="device_date"/>
+    </resultMap>
+    <select id="showDevice" resultMap="deviceResultMap">
+        select * from device
+    </select>
+
+    <insert id="addDevice" parameterType="Device">
+        insert into device value (NULL,#{deviceName},#{deviceCount},#{devicePrice},#{deviceDate})
+    </insert>
+
+    <update id="removeDevice" parameterType="Device">
+        update device set device_count = device_count - #{deviceCount} where device_name = #{deviceName}
+    </update>
+
+    <select id="findDeviceCount" parameterType="Device" resultMap="deviceResultMap">
+        select * from device where device_name = #{deviceName}
+    </select>
+</mapper>

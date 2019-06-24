@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.SalaryDao">
+    <resultMap id="salaryResultMap" type="Salary">
+        <id property="id" column="id"/>
+        <id property="salaryNumber" column="salary_number"/>
+        <id property="salaryDate" column="salary_date"/>
+        <id property="salaryName" column="salary_name"/>
+        <id property="salarySalary" column="salary_salary"/>
+    </resultMap>
+    <select id="showSalary"  resultMap="salaryResultMap">
+        select * from salary
+    </select>
+
+    <insert id="addSalary" parameterType="Salary">
+        insert into salary value (NULL,#{salaryNumber},#{salaryName},#{salaryDate},#{salarySalary})
+    </insert>
+
+</mapper>
