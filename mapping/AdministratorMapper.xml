@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.AdministratorDao">
+<!--    用作登录-->
+    <select id="findAdministratorByAccountAndPassword" parameterType="management.pojo.Administrator" resultType="Administrator">
+        select * from administrator where account = #{account} and password = #{password}
+    </select>
+<!--  注册新管理员  -->
+    <insert id="addAdministrator" parameterType="management.pojo.Administrator">
+        insert into administrator values (NULL,#{account},#{password},#{email},#{phone},#{register_time})
+    </insert>
+<!--    修改密码-->
+    <update id="updateAdministratorPassword" parameterType="management.pojo.Administrator">
+        update administrator set password = #{password} where account = #{account}
+    </update>
+<!--    忘记密码-->
+    <select id="findAdministratorByAccountAndMail" parameterType="management.pojo.Administrator" resultType="Administrator">
+        select * from administrator where account = #{account} and email = #{email}
+    </select>
+<!--    查看全部管理员-->
+    <select id="findAllAdministrator"  resultType="Administrator">
+        select * from administrator
+    </select>
+<!--    删除管理员-->
+    <delete id="removeAdministratorByAccount" parameterType="management.pojo.Administrator">
+        delete from administrator where account = #{account}
+    </delete>
+
+</mapper>

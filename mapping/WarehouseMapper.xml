@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.WarehouseDao">
+    <insert id="warehouseInputFirstTime" parameterType="management.pojo.Warehouse" >
+        insert into warehouse value (NULL,#{name},#{size},#{cost},#{sell},#{stocks})
+    </insert>
+
+    <update id="warehouseOutput" parameterType="management.pojo.Warehouse" >
+        update warehouse set stocks = stocks - #{stocks} where name = #{name}
+    </update>
+
+    <update id="warehouseInput" parameterType="management.pojo.Warehouse">
+        update warehouse set stocks = stocks + #{stocks} where name = #{name}
+    </update>
+
+    <select id="showWarehouse"  resultType="management.pojo.Warehouse">
+        select * from warehouse
+    </select>
+
+    <select id="showWarehouseStocks" parameterType="management.pojo.Warehouse" resultType="Integer">
+        select stocks from warehouse where name = #{name}
+    </select>
+
+    <select id="findWarehouseByName" parameterType="management.pojo.Warehouse" resultType="management.pojo.Warehouse">
+        select * from warehouse where name = #{name} and size = #{size}
+    </select>
+</mapper>

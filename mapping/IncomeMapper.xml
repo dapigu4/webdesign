@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.IncomeDao">
+    <resultMap id="incomeResultMap" type="Income">
+        <id property="id" column="id"/>
+        <id property="incomeDate" column="income_date"/>
+        <id property="incomeSource" column="income_source"/>
+        <id property="incomeMoney" column="income_money"/>
+    </resultMap>
+    <insert id="addIncome" parameterType="Income">
+        insert into income value (NULL,#{incomeDate},#{incomeSource},#{incomeMoney})
+    </insert>
+
+    <select id="showIncomeByYear" resultMap="incomeResultMap" parameterType="Income">
+         select * from income where year (income_date) = year (#{incomeDate})
+    </select>
+
+    <select id="showIncomeByMonth" resultMap="incomeResultMap" parameterType="Income">
+         select * from income where month (income_date) = month (#{incomeDate})
+    </select>
+
+    <select id="showIncomeByDay" resultMap="incomeResultMap" parameterType="Income">
+        select * from income where day (income_date) = day (#{incomeDate})
+    </select>
+</mapper>
