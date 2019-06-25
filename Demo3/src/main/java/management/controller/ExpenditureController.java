@@ -36,9 +36,9 @@ public class ExpenditureController {
         return expenditureService.showExpenditureByMonth(expenditure);
     }
 
-    @RequestMapping("/showexpenditurebyday")
+    @RequestMapping("/showexpenditurebyyearandmonth")
     @ResponseBody
-    public List<Expenditure> showExpenditureByDay(@RequestBody Expenditure expenditure){
-        return expenditureService.showExpenditureByDay(expenditure);
+    public List<Expenditure> showExpenditureByYearAndMonth(@RequestBody Expenditure expenditure){
+        return expenditureService.showExpenditureByYearAndMonth(expenditure);
     }
 }

@@ -21,7 +21,9 @@
          select * from income where month (income_date) = month (#{incomeDate})
     </select>
 
-    <select id="showIncomeByDay" resultMap="incomeResultMap" parameterType="Income">
-        select * from income where day (income_date) = day (#{incomeDate})
+    <select id="showIncomeByYearAndMonth" resultMap="incomeResultMap" parameterType="Income">
+        select * from income where date_format(income_date,'%Y-%m') = date_format(#{incomeDate},'%Y-%m')
     </select>
+
+
 </mapper>

@@ -39,7 +39,7 @@ public class IncomeServiceImpl implements IncomeService {
     }
 
     @Override
-    public List<Income> showIncomeByDay(Income income) {
-        return incomeDao.showIncomeByDay(income);
+    public List<Income> showIncomeByYearAndMonth(Income income) {
+        return incomeDao.showIncomeByYearAndMonth(income);
     }
 }

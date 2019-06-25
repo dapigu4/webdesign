@@ -37,7 +37,7 @@ public class ExpenditureServiceImpl implements ExpenditureService {
     }
 
     @Override
-    public List<Expenditure> showExpenditureByDay(Expenditure expenditure) {
-        return expenditureDao.showExpenditureByDay(expenditure);
+    public List<Expenditure> showExpenditureByYearAndMonth(Expenditure expenditure) {
+        return expenditureDao.showExpenditureByYearAndMonth(expenditure);
     }
 }

@@ -22,8 +22,8 @@
          select * from expenditure where month (expenditure_date) = month (#{expenditureDate})
     </select>
 
-    <select id="showExpenditureByDay" resultMap="expenditureResultMap" parameterType="Expenditure">
-         select * from expenditure where day (expenditure_date) = day (#{expenditureDate})
+    <select id="showExpenditureByYearAndMonth" resultMap="expenditureResultMap" parameterType="Expenditure">
+        select * from expenditure where date_format(expenditure_date,'%Y-%m') = date_format(#{expenditureDate},'%Y-%m')
     </select>
 
 

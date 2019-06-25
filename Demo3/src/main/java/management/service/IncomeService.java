@@ -9,5 +9,5 @@ public interface IncomeService {
     Map addIncome(Income income);
     List<Income> showIncomeByYear(Income income);
     List<Income> showIncomeByMonth(Income income);
-    List<Income> showIncomeByDay(Income income);
+    List<Income> showIncomeByYearAndMonth(Income income);
 }

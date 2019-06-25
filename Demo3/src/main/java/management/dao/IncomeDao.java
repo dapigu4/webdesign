@@ -10,5 +10,5 @@ public interface IncomeDao {
     int addIncome(Income income);
     List<Income> showIncomeByYear(Income income);//年
     List<Income> showIncomeByMonth(Income income);//月
-    List<Income> showIncomeByDay(Income income);//日
+    List<Income> showIncomeByYearAndMonth(Income income);//年加月
 }

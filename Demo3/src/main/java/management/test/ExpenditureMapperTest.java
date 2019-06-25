@@ -51,8 +51,8 @@ public class ExpenditureMapperTest {
     public void test4() throws ParseException {
         Expenditure expenditure = new Expenditure();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = simpleDateFormat.parse("2019-1-6");
+        Date date = simpleDateFormat.parse("2019-3-25");
         expenditure.setExpenditureDate(date);
-        System.out.println(expenditureService.showExpenditureByDay(expenditure));
+        System.out.println(expenditureService.showExpenditureByYearAndMonth(expenditure));
     }
 }

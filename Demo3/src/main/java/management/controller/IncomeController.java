@@ -35,9 +35,9 @@ public class IncomeController {
         return incomeService.showIncomeByMonth(income);
     }
 
-    @RequestMapping("/showincomebyday")
+    @RequestMapping("/showincomebyyearandmonth")
     @ResponseBody
-    public List<Income> showIncomeByDay(@RequestBody Income income){
-        return incomeService.showIncomeByDay(income);
+    public List<Income> showIncomeByYearAndMonth(@RequestBody Income income){
+        return incomeService.showIncomeByYearAndMonth(income);
     }
 }

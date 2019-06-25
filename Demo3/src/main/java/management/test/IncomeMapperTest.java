@@ -49,8 +49,8 @@ public class IncomeMapperTest {
     public void test4() throws ParseException {
         Income income = new Income();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = simpleDateFormat.parse("2019-1-9");
+        Date date = simpleDateFormat.parse("2019-5-9");
         income.setIncomeDate(date);
-        System.out.println(incomeService.showIncomeByDay(income));
+        System.out.println(incomeService.showIncomeByYearAndMonth(income));
     }
 }

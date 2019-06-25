@@ -10,5 +10,5 @@ public interface ExpenditureService {
     Map addExpenditure(Expenditure expenditure);
     List<Expenditure> showExpenditureByYear(Expenditure expenditure);
     List<Expenditure> showExpenditureByMonth(Expenditure expenditure);
-    List<Expenditure> showExpenditureByDay(Expenditure expenditure);
+    List<Expenditure> showExpenditureByYearAndMonth(Expenditure expenditure);
 }
