@@ -11,7 +11,7 @@
         <id property="salarySalary" column="salary_salary"/>
     </resultMap>
     <select id="showSalary"  resultMap="salaryResultMap">
-        select * from salary
+        select * from salary where date_format(salary_date,'%Y-%m') = date_format(#{salaryDate},'%Y-%m')
     </select>
 
     <insert id="addSalary" parameterType="Salary">

@@ -20,8 +20,8 @@ public class SalaryServiceImpl implements SalaryService {
     @Resource
     private StaffDao staffDao;
     @Override
-    public List<Salary> showSalary() {
-        return salaryDao.showSalary();
+    public List<Salary> showSalary(Salary salary) {
+        return salaryDao.showSalary(salary);
     }
 
     @Override

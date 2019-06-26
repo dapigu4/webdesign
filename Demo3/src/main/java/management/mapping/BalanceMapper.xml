@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="management.dao.BalanceDao">
+    <resultMap id="balanceResultMap" type="Balance">
+        <id property="id" column="id"/>
+        <id property="balanceDate" column="balance_date"/>
+        <id property="balanceDetails" column="balance_details"/>
+        <id property="balanceMoney" column="balance_money"/>
+    </resultMap>
+    <select id="showBalanceByYearAndMonth"  resultMap="balanceResultMap">
+        select * from balance where date_format(balance_date,'%Y-%m') = date_format(#{balanceDate},'%Y-%m')
+    </select>
+
+    <insert id="addBalanceIncome" parameterType="Balance">
+        insert into balance value (NULL,#{balanceDate},#{balanceDetails},#{balanceMoney})
+    </insert>
+
+    <insert id="addBalanceExpenditure" parameterType="Balance">
+        insert into balance value (NULL,#{balanceDate},#{balanceDetails},#{balanceMoney})
+    </insert>
+</mapper>

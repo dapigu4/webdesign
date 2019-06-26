@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 @Repository
 public interface SalaryDao {
-    List<Salary> showSalary();
+    List<Salary> showSalary(Salary salary);
     int addSalary(Salary salary);
 }

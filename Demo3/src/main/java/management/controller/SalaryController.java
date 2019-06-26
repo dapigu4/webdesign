@@ -19,8 +19,8 @@ public class SalaryController {
 
     @RequestMapping("/show")
     @ResponseBody
-    public List<Salary> show(){
-       return salaryService.showSalary();
+    public List<Salary> show(@RequestBody Salary salary){
+       return salaryService.showSalary(salary);
     }
 
     @RequestMapping("/add")

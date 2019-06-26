@@ -8,6 +8,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -17,8 +19,12 @@ public class SalaryMapperTest {
     private SalaryService salaryService;
 
     @Test
-    public void test1(){
-        System.out.println(salaryService.showSalary());
+    public void test1() throws ParseException {
+        Salary salary = new Salary();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = simpleDateFormat.parse("2019-6-1");
+        salary.setSalaryDate(date);
+        System.out.println(salaryService.showSalary(salary));
     }
 
     @Test

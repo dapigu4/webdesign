@@ -73,9 +73,9 @@ $("#mon").change(function () {
             for(var i = (curindex-1)*10;i<(curindex-1)*10+10;i++){
                 var s = "<tr>"+
                     "<th>"+(i+1)+"</th>"+                              //////////////////////////////////////////
-                    "<th>"+lis[i].salaryDate+"</th>"+
                     "<th>"+lis[i].salaryNumber+"</th>"+
                     "<th>"+lis[i].salaryName+"</th>"+
+                    "<th>"+lis[i].salaryDate+"</th>"+
                     "<th>"+lis[i].salarySalary+"</th>"+
                     "</tr>";
                 $("#tab").append(s);
@@ -217,9 +217,9 @@ function  reshow() {
     for(var i = (curindex-1)*10;i<(curindex-1)*10+10;i++){
         var s = "<tr>"+
             "<th>"+(i+1)+"</th>"+                                                ////////////////////////////////////////////
-            "<th>"+lis[i].salaryDate+"</th>"+
             "<th>"+lis[i].salaryNumber+"</th>"+
             "<th>"+lis[i].salaryName+"</th>"+
+            "<th>"+lis[i].salaryDate+"</th>"+
             "<th>"+lis[i].salarySalary+"</th>"+
             "</tr>";
         $("#tab").append(s);

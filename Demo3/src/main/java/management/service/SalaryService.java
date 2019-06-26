@@ -6,6 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public interface SalaryService {
-    List<Salary> showSalary();
+    List<Salary> showSalary(Salary salary);
     Map addSalary(Salary salary);
 }
