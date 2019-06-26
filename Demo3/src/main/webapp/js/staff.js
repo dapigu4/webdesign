@@ -80,7 +80,7 @@ $("#btn_sub").click(function () {
             data: JSON.stringify(user),
             contentType:"application/json;charset=utf-8",
             success: function (data) {
-                if (data.msg === "") {
+                if (data.msg === "fail") {
                     $("#con_sub").html("该员工不存在，请确认员工编号无误");
                     $("#close_sub").show();
                     $("#sure_sub").hide();

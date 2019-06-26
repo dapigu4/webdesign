@@ -21,23 +21,32 @@ $("#btn_i").click(function () {
 });
 //提交数据
 $("#sub_i").click(function () {
-    /*var day = $("#time_i").val();
+    var day = $("#time_i").val();
     var money = $("#money_i").val();
     var info = $("#info_i").val();
     var user = {};
-    user.day = day;                                                    //==================*********************
-    user.money = money;
-    user.info = info;
+    user.incomeDate = day;                                                    //==================*********************
+    user.incomeMoney = money;
+    user.incomeSource = info;
     $.ajax({
-        url:"",
+        url:"http://localhost:8080/income/add",
         type:"post",
         dataType:"json",
         data:JSON.stringify(user),
+        contentType:"application/json;charset=utf-8",
         success:function (data) {
-
+            if(data === "success"){
+                alert("提交成功");
+            }
+            else {
+                alert("提交失败");
+            }
+        },
+        error:function () {
+            alert("哦吼 完蛋");
         }
-    });*/
-    alert("提交成功");
+    });
+
 });
 
 
@@ -60,25 +69,36 @@ $("#btn_o").click(function () {
         $("#sub_o").show();
     }
 });
+
+
 //提交数据
 $("#sub_o").click(function () {
-    /*var day = $("#time_i").val();
-    var money = $("#money_i").val();
-    var info = $("#info_i").val();
+    var day = $("#time_o").val();
+    var money = $("#money_o").val();
+    var info = $("#info_o").val();
     var user = {};
-    user.day = day;                                                      //==================*********************
-    user.money = money;
-    user.info = info;
+    user.expenditureDate = day;                                                      //==================*********************
+    user.expenditureMoney = money;
+    user.expenditureUse = info;
     $.ajax({
-        url:"",
+        url:"http://localhost:8080/expenditure/add",
         type:"post",
         dataType:"json",
         data:JSON.stringify(user),
+        contentType:"application/json;charset=utf-8",
         success:function (data) {
-
+            if(data === "success"){
+                alert("提交成功");
+            }
+            else {
+                alert("提交失败");
+            }
+        },
+        error:function () {
+            alert("哦吼 完蛋");
         }
-    });*/
-    alert("提交成功");
+    });
+
 });
 
 //获取时间
