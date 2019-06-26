@@ -25,11 +25,11 @@ $("#sub_i").click(function () {
     var money = $("#money_i").val();
     var info = $("#info_i").val();
     var user = {};
-    user.incomeDate = day;                                                    //==================*********************
-    user.incomeMoney = money;
-    user.incomeSource = info;
+    user.balanceDate = day;                                                    //==================*********************
+    user.balanceMoney = money;
+    user.balanceDetails = info;
     $.ajax({
-        url:"http://localhost:8080/income/add",
+        url:"http://localhost:8080/balance/addIncome",
         type:"post",
         dataType:"json",
         data:JSON.stringify(user),
@@ -77,11 +77,11 @@ $("#sub_o").click(function () {
     var money = $("#money_o").val();
     var info = $("#info_o").val();
     var user = {};
-    user.expenditureDate = day;                                                      //==================*********************
-    user.expenditureMoney = money;
-    user.expenditureUse = info;
+    user.balanceDate = day;                                                      //==================*********************
+    user.balanceMoney = money;
+    user.balanceDetails = info;
     $.ajax({
-        url:"http://localhost:8080/expenditure/add",
+        url:"http://localhost:8080/balance/addExpenditure",
         type:"post",
         dataType:"json",
         data:JSON.stringify(user),

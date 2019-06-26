@@ -19,11 +19,11 @@ var curindex;
 $(document).ready(function () {
     $("#tab").html("");
     curindex = 1;
-    var month = $("#mon").val();
+    var month = $("#mon").val()+"-01";
     var user = {};
     user.month = month;
     $.ajax({
-        url: "",
+        url: "http://localhost:8080/balance/showbalance",
         type: "post",
         dataType: "json",
         data: JSON.stringify(user),
@@ -34,13 +34,22 @@ $(document).ready(function () {
             maxlength = Math.ceil(length / 10);
             init(maxlength);
             for (var i = (curindex - 1) * 10; i < (curindex - 1) * 10 + 10; i++) {
-                var s = "<tr>" +
-                    "<th>" + (i+1) + "</th>" +
-                    "<th>" + lis[i] + "</th>" +                            ////////////////////////////////
-                    "<th>" + lis[i] + "</th>" +
-                    "<th>" + lis[i] + "</th>" +
-                    "<th>" + lis[i] + "</th>" +
-                    "</tr>";
+                var s;
+                if(parseInt(lis[i].balanceMoney)>=0){
+                    s = "<tr>" +
+                        "<th>" + (i+1) + "</th>" +
+                        "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
+                        "<th>" + lis[i].balanceMoney + "</th>" +
+                        "<th style='color: #8ac248'>" + lis[i].balanceDetails + "</th>" +
+                        "</tr>";
+                }else {
+                    s = "<tr>" +
+                        "<th>" + (i+1) + "</th>" +
+                        "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
+                        "<th>" + lis[i].balanceMoney + "</th>" +
+                        "<th style='color: #721c24'>" + lis[i].balanceDetails + "</th>" +
+                        "</tr>";
+                }
                 $("#tab").append(s);
             }
         },
@@ -54,11 +63,11 @@ $(document).ready(function () {
 $("#mon").change(function () {
     $("#tab").html("");
     curindex = 1;
-    var month = $("#mon").val();
+    var month = $("#mon").val()+"-01";
     var user = {};
     user.month = month;
     $.ajax({
-        url: "",
+        url: "http://localhost:8080/balance/showbalance",
         type: "post",
         dataType: "json",
         data: JSON.stringify(user),
@@ -69,13 +78,22 @@ $("#mon").change(function () {
             maxlength = Math.ceil(length / 10);
             init(maxlength);
             for (var i = (curindex - 1) * 10; i < (curindex - 1) * 10 + 10; i++) {
-                var s = "<tr>" +
-                    "<th>" + (i+1) + "</th>" +
-                    "<th>" + lis[i] + "</th>" +                            ////////////////////////////////
-                    "<th>" + lis[i] + "</th>" +
-                    "<th>" + lis[i] + "</th>" +
-                    "<th>" + lis[i] + "</th>" +
-                    "</tr>";
+                var s;
+                if(parseInt(lis[i].balanceMoney)>=0){
+                    s = "<tr>" +
+                        "<th>" + (i+1) + "</th>" +
+                        "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
+                        "<th>" + lis[i].balanceMoney + "</th>" +
+                        "<th style='color: #8ac248'>" + lis[i].balanceDetails + "</th>" +
+                        "</tr>";
+                }else {
+                    s = "<tr>" +
+                        "<th>" + (i+1) + "</th>" +
+                        "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
+                        "<th>" + lis[i].balanceMoney + "</th>" +
+                        "<th style='color: #721c24'>" + lis[i].balanceDetails + "</th>" +
+                        "</tr>";
+                }
                 $("#tab").append(s);
             }
         },
@@ -144,13 +162,22 @@ function init(maxlength) {
 function reshow() {
     $("#tab").html("");
     for (var i = (curindex - 1) * 10; i < (curindex - 1) * 10 + 10; i++) {
-        var s = "<tr>" +
-            "<th>" + (i+1) + "</th>" +
-            "<th>" + lis[i] + "</th>" +                                      ////////////////////////////////
-            "<th>" + lis[i] + "</th>" +
-            "<th>" + lis[i] + "</th>" +
-            "<th>" + lis[i] + "</th>" +
-            "</tr>";
+        var s;
+        if(parseInt(lis[i].balanceMoney)>=0){
+            s = "<tr>" +
+                "<th>" + (i+1) + "</th>" +
+                "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
+                "<th>" + lis[i].balanceMoney + "</th>" +
+                "<th style='color: #8ac248'>" + lis[i].balanceDetails + "</th>" +
+                "</tr>";
+        }else {
+            s = "<tr>" +
+                "<th>" + (i+1) + "</th>" +
+                "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
+                "<th>" + lis[i].balanceMoney + "</th>" +
+                "<th style='color: #721c24'>" + lis[i].balanceDetails + "</th>" +
+                "</tr>";
+        }
         $("#tab").append(s);
     }
 }
