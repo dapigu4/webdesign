@@ -28,6 +28,7 @@ public class AdministratorController {
     }
 
     @RequestMapping("/register")
+    @ResponseBody
     public Map register(@RequestBody Administrator admin){//注册
         return administratorService.addAdministrator(admin);
     }
@@ -44,10 +45,10 @@ public class AdministratorController {
         return administratorService.updateAdministratorPassword(admin);
     }
 
-    @RequestMapping("/list")
+    @RequestMapping("/show")
     @ResponseBody
-    public List<Administrator> list(){
-        return administratorService.findAllAdministrator();
+    public Administrator show(){
+        return administratorService.show();
     }
 
     @RequestMapping("/remove")
@@ -57,9 +58,8 @@ public class AdministratorController {
     }
 
     @RequestMapping("/logout")
-    public String logout(){
+    public void logout(){
         UserContext.setCurrentAdministrator(null);
-        return "login.html";
     }
 
 }

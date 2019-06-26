@@ -23,9 +23,10 @@ var curindex;
 $("#pills-check-tab").click(function () {
     $("#tab").html("");
     curindex = 1;
-    var mon = $("#mon").val();
+    var mon = $("#mon").val()+"-01";
+    console.log(mon);
     var user = {};
-    user.date = mon;
+    user.salaryDate = mon;
     $.ajax({
         url:"http://localhost:8080/salary/show",
         type:"post",
@@ -34,22 +35,23 @@ $("#pills-check-tab").click(function () {
         contentType:"application/json;charset=utf-8",
         success:function (data) {
             lis = data;
+            console.log(data);
             var length = lis.length;
             maxlength = Math.ceil(length / 10);
             init(maxlength);
             for(var i = (curindex-1)*10;i<(curindex-1)*10+10;i++){
                 var s = "<tr>"+
                     "<th>"+(i+1)+"</th>"+                              //////////////////////////////////////////
-                    "<th>"+lis[i].salaryDate+"</th>"+
                     "<th>"+lis[i].salaryNumber+"</th>"+
                     "<th>"+lis[i].salaryName+"</th>"+
+                    "<th>"+lis[i].salaryDate+"</th>"+
                     "<th>"+lis[i].salarySalary+"</th>"+
                     "</tr>";
                 $("#tab").append(s);
             }
         },
         error:function () {
-
+                  alert("fsdjfiasdhj")
         }
     });
 });
@@ -57,14 +59,15 @@ $("#pills-check-tab").click(function () {
 $("#mon").change(function () {
     $("#tab").html("");
     curindex = 1;
-    var month = $("#mon").val();
+    var month = $("#mon").val()+"-01";
     var user = {};
-    user.month = month;
+    user.salaryDate = month;
     $.ajax({
         url:"http://localhost:8080/salary/show",
         type:"post",
         dataType:"json",
         data:JSON.stringify(user),
+        contentType:"application/json;charset=utf-8",
         success:function (data) {
             lis = data;
             var length = lis.length;
@@ -96,7 +99,7 @@ $("#btn_add").click(function () {
     var number = $("#number").val();
     var money = $("#money").val();
     var user = {};
-    user.salaryNumber = number;
+    user.number = number;
     if (date ===""||name === ""||number === ""||money === ""){
         $("#con_add").html("所有字段不能为空");
         $("#close_add").show();
@@ -109,12 +112,12 @@ $("#btn_add").click(function () {
             data: JSON.stringify(user),
             contentType:"application/json;charset=utf-8",
             success:function (data) {
-                if(data.msg === "success"){
+                if(data.msg === "fail"){
                     $("#con_add").html("该员工不存在，请确认员工编号无误");
                     $("#close_add").show();
                     $("#sure_add").hide();
                 }else {
-                    $("#close_add").html("确认添加该条发放记录？");
+                    $("#con_add").html("确认添加该条发放记录？");
                     $("#close_add").hide();
                     $("#sure_add").show();
                 }
@@ -145,6 +148,10 @@ $("#sure_add").click(function () {
         success:function (data) {
             if(data.msg === "success" ){
                 alert("增加成功");
+                $("#date").val("");
+                $("#name").val("");
+                $("#number").val("");
+                $("#money").val("");
             }
             else{
                 alert("增加失败！");

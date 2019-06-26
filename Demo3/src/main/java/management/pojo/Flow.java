@@ -1,13 +1,15 @@
 package management.pojo;
 
 import com.alibaba.fastjson.annotation.JSONField;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
 public class Flow {
     private Integer id;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JSONField(format = "yyyy-MM-dd")
-    private Date date;
+    private Date flowDate;
     private String inOrOut;
     private String supplyOrDemand;
     private String productName;
@@ -34,12 +36,12 @@ public class Flow {
         this.id = id;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getFlowDate() {
+        return flowDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setFlowDate(Date flowDate) {
+        this.flowDate = flowDate;
     }
 
     public String getInOrOut() {

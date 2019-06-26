@@ -14,7 +14,7 @@ $("#btn_quit").click(function () {
    sessionStorage.removeItem("username");
    var admin = {};
    $.ajax({
-      url:"http://localhost:8080/administrator/login",
+      url:"http://localhost:8080/administrator/logout",
       type:"post",
       data:JSON.stringify(admin),
       contentType:"application/json;charset=utf-8",
@@ -24,7 +24,7 @@ $("#btn_quit").click(function () {
       error:function () {
       }
    });
-   window.location.href = "../login/login.html";
+   window.location.href = "login.html";
 });
 
 //确定用户操作的选中项

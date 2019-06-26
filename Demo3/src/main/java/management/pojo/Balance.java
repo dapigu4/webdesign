@@ -1,11 +1,13 @@
 package management.pojo;
 
 import com.alibaba.fastjson.annotation.JSONField;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
 public class Balance {
     private Integer id;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JSONField(format = "yyyy-MM-dd")
     private Date balanceDate;
     private String balanceDetails;

@@ -63,8 +63,14 @@ public class StaffServiceImpl implements StaffService {
     }
 
     @Override
-    public Staff showStaffInfoByNumber(Staff staff) {
-        return staffDao.showStaffInfoByNumber(staff);
+    public Map showStaffInfoByNumber(Staff staff) {
+        Map<String,String> map = new HashMap<>();
+        if(staffDao.showStaffInfoByNumber(staff)!=null){
+            map.put("msg","success");
+        }else {
+            map.put("msg","fail");
+        }
+        return map;
     }
 
     @Override

@@ -13,4 +13,5 @@ public interface AdministratorDao {
     Administrator findAdministratorByAccountAndMail(Administrator admin);
     List<Administrator> findAllAdministrator();
     int removeAdministratorByAccount(Administrator admin);
+    Administrator show(Administrator administrator);
 }

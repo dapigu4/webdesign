@@ -44,12 +44,12 @@ public class AdministratorMapperTest {
     @Test
     public void Test3(){//注册测试
         Administrator admin = new Administrator();
-        admin.setAccount("dapigu");
+        admin.setAccount("dau");
         admin.setPassword("123");
         admin.setEmail("1232342@qedc.com");
         admin.setPhone("15412334632");
         admin.setRegister_time(new Date());
-        administratorService.addAdministrator(admin);
+        System.out.println(administratorService.addAdministrator(admin));
     }
 
     @Test

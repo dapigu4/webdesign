@@ -36,13 +36,13 @@ public class SupplierMapperTest {
     @Test
     public void test3(){
         Supplier supplier = new Supplier();
-        supplier.setSupplierName("捞头");
+        supplier.setSupplierName("华师");
         System.out.println(supplierService.removeSupplier(supplier));
     }
     @Test
     public void test4(){
         Supplier supplier = new Supplier();
-        supplier.setSupplierName("华工");
+        supplier.setSupplierName("华师");
         System.out.println(supplierService.findSupplier(supplier));
     }
 }

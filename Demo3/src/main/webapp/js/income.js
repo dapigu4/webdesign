@@ -35,8 +35,11 @@ $("#sub_i").click(function () {
         data:JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
-            if(data === "success"){
+            if(data.msg === "success"){
                 alert("提交成功");
+                $("#time_i").val("");
+                $("#money_i").val("");
+                $("#info_i").val("");
             }
             else {
                 alert("提交失败");
@@ -63,7 +66,7 @@ $("#btn_o").click(function () {
         $("#sub_o").hide();
     }
     else {
-        $("#con_o").html("确定提交该收入明细");
+        $("#con_o").html("确定提交该支出明细");
         $("#close_o").html("取消");
         $("#sure_o").hide();
         $("#sub_o").show();
@@ -87,7 +90,10 @@ $("#sub_o").click(function () {
         data:JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
-            if(data === "success"){
+            if(data.msg === "success"){
+                $("#time_o").val("");
+                $("#money_o").val("");
+                $("#info_o").val("");
                 alert("提交成功");
             }
             else {

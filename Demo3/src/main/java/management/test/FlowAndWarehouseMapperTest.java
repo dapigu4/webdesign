@@ -18,7 +18,7 @@ public class FlowAndWarehouseMapperTest {
 
     @Test
     public void test1(){
-        System.out.println(flowService.showFlow());
+//        System.out.println(flowService.showFlow());
     }
 
     @Test
@@ -29,7 +29,7 @@ public class FlowAndWarehouseMapperTest {
     @Test
     public void test3(){
         Flow flow = new Flow();
-        flow.setDate(new Date());
+        flow.setFlowDate(new Date());
         flow.setPerCost(15.0);
         flow.setPerSell(30.0);
         flow.setProductName("拖孩");
@@ -44,12 +44,12 @@ public class FlowAndWarehouseMapperTest {
     @Test
     public void test4(){
         Flow flow = new Flow();
-        flow.setDate(new Date());
+        flow.setFlowDate(new Date());
         flow.setPerCost(15.0);
         flow.setPerSell(30.0);
         flow.setProductName("拖孩");
         flow.setSize("50码");
-        flow.setSupplyOrDemand("付款后视镜对话框");
+        flow.setSupplyOrDemand("付款后话框");
         flow.setCount(5);
         flow.setInOrOut("O");
         flow.setTotal(43.0);

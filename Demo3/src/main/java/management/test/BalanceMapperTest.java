@@ -21,12 +21,11 @@ public class BalanceMapperTest {
     @Test
     public void test1() throws ParseException {
         Balance balance = new Balance();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = simpleDateFormat.parse("2019-2-5");
+       Date date = new Date();
         balance.setBalanceDate(date);
         balance.setBalanceDetails("fa史蒂夫");
         balance.setBalanceMoney(300.0);
-        balanceService.addBalanceIncome(balance);
+        System.out.println(balanceService.addBalanceIncome(balance));
     }
 
     @Test

@@ -12,4 +12,5 @@ public interface AdministratorService {
     Map findAdministratorByAccountAndMail(Administrator admin);
     List<Administrator> findAllAdministrator();
     Map removeAdministratorByAccount(Administrator admin);
+    Administrator show();
 }

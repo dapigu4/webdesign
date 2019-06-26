@@ -10,5 +10,5 @@ public interface ClientDao {
     List<Client> showClient();
     int addClient(Client client);
     int removeClient(Client client);
-    Client findClient(Client client);
+    List<Client> findClient(Client client);
 }

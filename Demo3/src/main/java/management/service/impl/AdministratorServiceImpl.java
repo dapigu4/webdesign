@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,10 +24,10 @@ public class AdministratorServiceImpl implements AdministratorService {
         Map<String,String> map = new HashMap<>();
         Administrator temp;
         if((temp = administratorDao.findAdministratorByAccountAndPassword(admin)) != null){
-            map.put("msg","success");
+            map.put("msg",temp.getAccount());
             UserContext.setCurrentAdministrator(temp);
         }else {
-            map.put("msg","fail");
+            map.put("msg","");
         }
         return map;
     }
@@ -39,6 +40,7 @@ public class AdministratorServiceImpl implements AdministratorService {
     @Override
     public Map addAdministrator(Administrator admin) {
         Map<String,String> map = new HashMap<>();
+        admin.setRegister_time(new Date());
          int result = administratorDao.addAdministrator(admin);
         if (result>0){
             map.put("msg","success");
@@ -81,5 +83,10 @@ public class AdministratorServiceImpl implements AdministratorService {
             map.put("msg","fail");
         }
         return map;
+    }
+
+    @Override
+    public Administrator show() {
+        return administratorDao.show(UserContext.getCurrentAdministrator());
     }
 }

@@ -1,6 +1,9 @@
 package management.pojo;
 
 
+import com.alibaba.fastjson.annotation.JSONField;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Administrator {
@@ -9,7 +12,8 @@ public class Administrator {
     private String password;
     private String email;
     private String phone;
-//    @DateTimeFormat(pattern = "yyyy-MM-dd")//前台往后台传Date数据
+    @DateTimeFormat(pattern = "yyyy-MM-dd")//前台往后台传Date数据
+    @JSONField(format = "yyyy-MM-dd")
 //    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")//后台往前台传Date数据
     private Date register_time;
 

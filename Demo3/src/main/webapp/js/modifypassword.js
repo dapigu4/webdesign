@@ -3,16 +3,16 @@ $(document).ready(function () {
     var user = {};
     user.account = username;
     $.ajax({
-        url:"",
+        url:"http://localhost:8080/administrator/show",
         type:"post",
         dataType:"json",
         data:JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
             $("#info_u").html("用户名：" + data.account);
-            $("#info_m").html("邮箱：" + data.mail);
+            $("#info_m").html("邮箱：" + data.email);
             $("#info_p").html("联系电话：" + data.phone);
-            $("#info_d").html("注册日期：" + data.date);
+            $("#info_d").html("注册日期：" + data.register_time);
         }
     });
 
@@ -141,33 +141,33 @@ $("#sure_change").click(function () {
     var mail = $("#mail").val();
     var phone = $("#phone").val();
     var user = {};
-    var now = new Date();
-    user.usern = usern;                                                       //==================*********************
-    user.passw = passw;
-    user.mail = mail;
+    user.account = usern;                                                       //==================*********************
+    user.password = passw;
+    user.email = mail;
     user.phone = phone;
 
     $.ajax({
-        url: "",
+        url: "http://localhost:8080/administrator/modify",
         type: "post",
         dataType: "json",
         data: JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
-            alert("修改成功");
-            $("#usern").val("");
-            $("#oldpassw").val("");
-            $("#newpassw").val("");
-            $("#mail").val("");
-            $("#phone").val("");
+            if(data.msg === "success"){
+                alert("修改成功");
+                $("#usern").val("");
+                $("#oldpassw").val("");
+                $("#newpassw").val("");
+                $("#mail").val("");
+                $("#phone").val("");
+            }
+           else {
+               alert("修改失败");
+            }
         },
         error:function () {
-            alert("修改");
-            $("#usern").val("");
-            $("#oldpassw").val("");
-            $("#newpassw").val("");
-            $("#mail").val("");
-            $("#phone").val("");
+            alert("gg");
+
         }
     });
 });
@@ -179,31 +179,34 @@ $("#sure_add").click(function () {
     var mail1 = $("#mail1").val();
     var phone1 = $("#phone1").val();
     var user = {};
-    var now = new Date();
-    user.register_date = now.toLocaleDateString();
-    user.usern = userna;                                  //==================*********************
-    user.passw = passwo;
-    user.mail1 = mail1;
-    user.phone1 = phone1;
+    // var now = new Date();
+    // user.register_time = now.toDateString()
+    // console.log(now);
+    user.account = userna;                                  //==================*********************
+    user.password = passwo;
+    user.email = mail1;
+    user.phone = phone1;
     $.ajax({
-        url: "",
+        url: "http://localhost:8080/administrator/register",
         type: "post",
         dataType: "json",
         data: JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
-            alert("增加成功");
-            $("#userna").val("");
-            $("#newpasswo").val("");
-            $("#mail1").val("");
-            $("#phone1").val("");
+            console.log(data);
+            if (data.msg === "success"){
+                alert("增加成功");
+                $("#userna").val("");
+                $("#newpasswo").val("");
+                $("#mail1").val("");
+                $("#phone1").val("");
+            }
+            else {
+                alert("新增失败");
+            }
         },
         error:function () {
-            alert("增加");
-            $("#userna").val("");
-            $("#newpasswo").val("");
-            $("#mail1").val("");
-            $("#phone1").val("");
+            alert("gg");
         }
     });
 });
@@ -213,23 +216,27 @@ $("#sure_sub").click(function () {
     var usernam = $("#usernam").val();
     var oldpasswor = $("#oldpasswor").val();
     var user = {};
-    user.usernam = usernam;                                                  //==================*********************
-    user.oldpasswpr = oldpasswor;
+    user.account = usernam;                                                  //==================*********************
+    user.password = oldpasswor;
     $.ajax({
-        url: "",
+        url: "http://localhost:8080/administrator/remove",
         type: "post",
         dataType: "json",
         data: JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
-            alert("删除成功");
-            $("#usernam").val("");
-            $("#oldpasswor").val("");
+            if(data.msg === "success"){
+                alert("删除成功");
+                $("#usernam").val("");
+                $("#oldpasswor").val("");
+            }
+            else {
+                alert("删除失败");
+            }
         },
         error:function () {
-            alert("删除");
-            $("#usernam").val("");
-            $("#oldpasswor").val("");
+            alert("gg");
+
         }
     });
 });

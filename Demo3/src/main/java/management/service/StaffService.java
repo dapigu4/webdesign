@@ -10,6 +10,6 @@ public interface StaffService {
     Map addStaff(Staff staff);
     void removeStaffByName(Staff staff);
     List<Staff> showAllStaff();
-    Staff showStaffInfoByNumber(Staff staff);
+    Map showStaffInfoByNumber(Staff staff);
     Map removeStaffByNumber(Staff staff);
 }

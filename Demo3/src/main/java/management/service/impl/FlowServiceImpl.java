@@ -39,12 +39,15 @@ public class FlowServiceImpl implements FlowService {
         int result = -1;
         Supplier supplier = new Supplier();
         supplier.setSupplierName(flow.getSupplyOrDemand());
-        if (supplierDao.findSupplier(supplier) != null){
+        if (!supplierDao.findSupplier(supplier).isEmpty()){
             if (warehouseDao.findWarehouseByName(warehouse) != null) {
                 result = warehouseDao.warehouseInput(warehouse);
             } else {
                 result = warehouseDao.warehouseInputFirstTime(warehouse);
             }
+        }else {
+            hashMap.put("msg", "don't have this supplier");
+            return hashMap;
         }
 
         if (result > 0) {
@@ -68,17 +71,22 @@ public class FlowServiceImpl implements FlowService {
         int stocks;
         Client client = new Client();
         client.setClientName(flow.getSupplyOrDemand());
-        if(clientDao.findClient(client) != null){
+        if(!clientDao.findClient(client).isEmpty()){
             if ((temp = warehouseDao.findWarehouseByName(warehouse)) != null) {
                 stocks = temp.getStocks();
                 if (stocks < warehouse.getStocks()) {
                     hashMap.put("msg", "don't have enough stocks");
+                    return hashMap;
                 } else {
                     result = warehouseDao.warehouseOutput(warehouse);
                 }
             } else {
                 hashMap.put("msg", "don't have this product");
+                return hashMap;
             }
+        }else {
+            hashMap.put("msg", "don't have this client");
+            return hashMap;
         }
 
         if (result > 0) {
@@ -97,15 +105,15 @@ public class FlowServiceImpl implements FlowService {
     }
 
     @Override
-    public List<Flow> showFlow() {
-        List<Flow> list = flowDao.showFlow();
-        for (Flow flow:list) {
-            if("I".equals(flow.getInOrOut())){
-                flow.setInOrOut("入库");
-            }else if("O".equals(flow.getInOrOut())){
-                flow.setInOrOut("出库");
+    public List<Flow> showFlow(Flow flow) {
+        List<Flow> list = flowDao.showFlow(flow);
+        for (Flow flow1:list) {
+            if("I".equals(flow1.getInOrOut())){
+                flow1.setInOrOut("入库");
+            }else if("O".equals(flow1.getInOrOut())){
+                flow1.setInOrOut("出库");
             }else {
-                flow.setInOrOut("未知");
+                flow1.setInOrOut("未知");
             }
         }
         return list;

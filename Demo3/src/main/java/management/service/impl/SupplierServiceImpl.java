@@ -62,8 +62,7 @@ public class SupplierServiceImpl implements SupplierService {
     @Override
     public Map findSupplier(Supplier supplier) {
         Map<String,String> map = new HashMap<>();
-        Supplier temp = supplierDao.findSupplier(supplier);
-        if (temp != null){
+        if (supplierDao.findSupplier(supplier) != null){
             map.put("msg","success");
         }else {
             map.put("msg","fail");

@@ -9,7 +9,7 @@
         <id property="balanceDetails" column="balance_details"/>
         <id property="balanceMoney" column="balance_money"/>
     </resultMap>
-    <select id="showBalanceByYearAndMonth"  resultMap="balanceResultMap">
+    <select id="showBalanceByYearAndMonth"  resultMap="balanceResultMap" parameterType="Balance">
         select * from balance where date_format(balance_date,'%Y-%m') = date_format(#{balanceDate},'%Y-%m')
     </select>
 

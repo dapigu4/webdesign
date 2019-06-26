@@ -9,7 +9,7 @@ $("#mon_detail").datepicker({
 });
 $("#mon_detail").datepicker("setDate",new Date());
 
-$("#mon_totle").datepicker({
+/*$("#mon_totle").datepicker({
     format:'yyyy-mm',
     language:"zh-CN",
     startView:1,
@@ -18,7 +18,7 @@ $("#mon_totle").datepicker({
     autoclose:true
 });
 
-$("#mon_totle").datepicker("setDate",new Date());
+$("#mon_totle").datepicker("setDate",new Date());*/
 
 var curindexw;
 var curindexf;
@@ -63,7 +63,7 @@ $(document).ready(function () {
 });
 
 
-
+/*
 $("#mon_totle").change(function () {
     $("#in").html("");
     curindexw = 1;
@@ -97,14 +97,14 @@ $("#mon_totle").change(function () {
             alert("加载失败");
         }
     });
-});
+});*/
 
 $("#pills-out-tab").click(function () {
     $("#out").html("");
     curindexf = 1;
-    var mon = $("#mon_detail").val();
+    var mon = $("#mon_detail").val()+"-01";
     var user = {};
-    user.date = mon;
+    user.flowDate = mon;
     $.ajax({
         url:"http://localhost:8080/flow/flowlist",
         type:"post",
@@ -113,13 +113,14 @@ $("#pills-out-tab").click(function () {
         contentType:"application/json;charset=utf-8",
         success:function (data) {
             lisf = data;
+            console.log(data);
             var length = lisf.length;
             maxlengthf = Math.ceil(length / 10);
             initf(maxlengthf);
             for(var i = (curindexf-1)*10;i<(curindexf-1)*10+10;i++){
                 var s = "<tr>"+
                     "<th>"+(i+1)+"</th>"+                              //////////////////////////////////////////
-                    "<th>"+lisf[i].date+"</th>"+
+                    "<th>"+lisf[i].flowDate+"</th>"+
                     "<th>"+lisf[i].inOrOut+"</th>"+
                     "<th>"+lisf[i].supplyOrDemand+"</th>"+
                     "<th>"+lisf[i].productName+"</th>"+
@@ -140,9 +141,9 @@ $("#pills-out-tab").click(function () {
 $("#mon_detail").change(function () {
     $("#out").html("");
     curindexf = 1;
-    var mon = $("#mon_detail").val();
+    var mon = $("#mon_detail").val()+"-01";
     var user = {};
-    user.date = mon;
+    user.flowDate = mon;
     $.ajax({
         url:"http://localhost:8080/flow/flowlist",
         type:"post",
@@ -157,7 +158,7 @@ $("#mon_detail").change(function () {
             for(var i = (curindexf-1)*10;i<(curindexf-1)*10+10;i++){
                 var s = "<tr>"+
                     "<th>"+(i+1)+"</th>"+                              //////////////////////////////////////////
-                    "<th>"+lisf[i].date+"</th>"+
+                    "<th>"+lisf[i].flowDate+"</th>"+
                     "<th>"+lisf[i].inOrOut+"</th>"+
                     "<th>"+lisf[i].supplyOrDemand+"</th>"+
                     "<th>"+lisf[i].productName+"</th>"+
@@ -571,7 +572,7 @@ function  reshowf() {
     for(var i = (curindexf-1)*10;i<(curindexf-1)*10+10;i++){
         var s = "<tr>"+
             "<th>"+(i+1)+"</th>"+                                                ////////////////////////////////////////////
-            "<th>"+lisf[i].date+"</th>"+
+            "<th>"+lisf[i].flowDate+"</th>"+
             "<th>"+lisf[i].inOrOut+"</th>"+
             "<th>"+lisf[i].supplyOrDemand+"</th>"+
             "<th>"+lisf[i].productName+"</th>"+

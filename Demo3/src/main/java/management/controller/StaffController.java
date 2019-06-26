@@ -43,7 +43,7 @@ public class StaffController {
 
     @RequestMapping("/showbynumber")
     @ResponseBody
-    public Staff showByNumber(@RequestBody Staff staff) {
+    public Map showByNumber(@RequestBody Staff staff) {
         return staffService.showStaffInfoByNumber(staff);
     }
 

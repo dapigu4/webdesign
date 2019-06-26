@@ -81,7 +81,11 @@ $("#sure_add").click(function () {
         data:JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
-            alert("增加成功！")
+            alert("增加成功！");
+            $("#name").val("");
+            $("#num").val("");
+            $("#money").val("");
+            $("#date").val("");
         },
         error:function () {
             alert("增加失败");
@@ -139,7 +143,8 @@ $("#sure_sub").click(function () {
         data: JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
-            alert("删除成功！")
+            alert("删除成功！");
+            $("#device_name").val("");
         },
         error:function () {
             alert("删除失败");

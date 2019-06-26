@@ -64,8 +64,7 @@ public class ClientServiceImpl implements ClientService {
     @Override
     public Map findClient(Client client) {
         Map<String,String> map = new HashMap<>();
-        Client temp = clientDao.findClient(client);
-        if(temp != null){
+        if(clientDao.findClient(client) != null){
             map.put("msg","success");
         }else {
             map.put("msg","fail");

@@ -28,4 +28,8 @@
         delete from administrator where account = #{account}
     </delete>
 
+    <select id="show" parameterType="management.pojo.Administrator" resultType="Administrator">
+        select * from administrator where account = #{account}
+    </select>
+
 </mapper>

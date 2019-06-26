@@ -27,13 +27,8 @@ public class SalaryServiceImpl implements SalaryService {
     @Override
     public Map addSalary(Salary salary) {
         Map<String,String> map = new HashMap<>();
-        Staff staff = new Staff();
         int result = -1;
-        staff.setNumber(salary.getSalaryNumber());
-        staff.setName(salary.getSalaryName());
-        if(staffDao.showStaffInfoByNameAndNumber(staff)!=null){
-            result = salaryDao.addSalary(salary);
-        }
+        result = salaryDao.addSalary(salary);
         if(result>0){
             map.put("msg","success");
         }else {

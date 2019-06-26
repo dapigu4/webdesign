@@ -11,5 +11,5 @@ public interface FlowService {
     Map flowInput(Flow flow);//之后的入库直接改数量
     Map flowOutput(Flow flow);//出库直接修改数量
     List<Warehouse> showWarehouse();
-    List<Flow> showFlow();
+    List<Flow> showFlow(Flow flow);
 }

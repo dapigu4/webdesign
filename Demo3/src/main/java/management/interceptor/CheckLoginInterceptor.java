@@ -9,11 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 public class CheckLoginInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        if(UserContext.getCurrentAdministrator()== null){
-            response.sendRedirect("/login.html");
-            System.out.println("prehandler");
-            return false;
-        }
+//        if(UserContext.getCurrentAdministrator()== null){
+//            response.sendRedirect("/login.html");
+//            System.out.println("prehandler");
+//            return false;
+//        }
         return true;
     }
 }

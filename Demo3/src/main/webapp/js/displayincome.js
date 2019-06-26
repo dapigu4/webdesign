@@ -21,7 +21,7 @@ $(document).ready(function () {
     curindex = 1;
     var month = $("#mon").val()+"-01";
     var user = {};
-    user.month = month;
+    user.balanceDate = month;
     $.ajax({
         url: "http://localhost:8080/balance/showbalance",
         type: "post",
@@ -29,6 +29,7 @@ $(document).ready(function () {
         data: JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success: function (data) {
+            console.log(data);
             lis = data;
             var length = lis.length;
             maxlength = Math.ceil(length / 10);
@@ -39,15 +40,15 @@ $(document).ready(function () {
                     s = "<tr>" +
                         "<th>" + (i+1) + "</th>" +
                         "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
-                        "<th>" + lis[i].balanceMoney + "</th>" +
-                        "<th style='color: #8ac248'>" + lis[i].balanceDetails + "</th>" +
+                        "<th style='color: #8ac248'>" + lis[i].balanceMoney + "</th>" +
+                        "<th>" + lis[i].balanceDetails + "</th>" +
                         "</tr>";
                 }else {
                     s = "<tr>" +
                         "<th>" + (i+1) + "</th>" +
                         "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
-                        "<th>" + lis[i].balanceMoney + "</th>" +
-                        "<th style='color: #721c24'>" + lis[i].balanceDetails + "</th>" +
+                        "<th style='color: #ea1a16'>" + lis[i].balanceMoney + "</th>" +
+                        "<th>" + lis[i].balanceDetails + "</th>" +
                         "</tr>";
                 }
                 $("#tab").append(s);
@@ -65,7 +66,7 @@ $("#mon").change(function () {
     curindex = 1;
     var month = $("#mon").val()+"-01";
     var user = {};
-    user.month = month;
+    user.balanceDate = month;
     $.ajax({
         url: "http://localhost:8080/balance/showbalance",
         type: "post",
@@ -73,6 +74,7 @@ $("#mon").change(function () {
         data: JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success: function (data) {
+
             lis = data;
             var length = lis.length;
             maxlength = Math.ceil(length / 10);
@@ -83,15 +85,15 @@ $("#mon").change(function () {
                     s = "<tr>" +
                         "<th>" + (i+1) + "</th>" +
                         "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
-                        "<th>" + lis[i].balanceMoney + "</th>" +
-                        "<th style='color: #8ac248'>" + lis[i].balanceDetails + "</th>" +
+                        "<th style='color: #8ac248'>" + lis[i].balanceMoney + "</th>" +
+                        "<th>" + lis[i].balanceDetails + "</th>" +
                         "</tr>";
                 }else {
                     s = "<tr>" +
                         "<th>" + (i+1) + "</th>" +
                         "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
-                        "<th>" + lis[i].balanceMoney + "</th>" +
-                        "<th style='color: #721c24'>" + lis[i].balanceDetails + "</th>" +
+                        "<th style='color: #ea1a16'>" + lis[i].balanceMoney + "</th>" +
+                        "<th>" + lis[i].balanceDetails + "</th>" +
                         "</tr>";
                 }
                 $("#tab").append(s);
@@ -167,15 +169,15 @@ function reshow() {
             s = "<tr>" +
                 "<th>" + (i+1) + "</th>" +
                 "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
-                "<th>" + lis[i].balanceMoney + "</th>" +
-                "<th style='color: #8ac248'>" + lis[i].balanceDetails + "</th>" +
+                "<th style='color: #8ac248'>" + lis[i].balanceMoney + "</th>" +
+                "<th >" + lis[i].balanceDetails + "</th>" +
                 "</tr>";
         }else {
             s = "<tr>" +
                 "<th>" + (i+1) + "</th>" +
                 "<th>" + lis[i].balanceDate + "</th>" +                            ////////////////////////////////
-                "<th>" + lis[i].balanceMoney + "</th>" +
-                "<th style='color: #721c24'>" + lis[i].balanceDetails + "</th>" +
+                "<th style='color: #ea1a16>" + lis[i].balanceMoney + "</th>" +
+                "<th >" + lis[i].balanceDetails + "</th>" +
                 "</tr>";
         }
         $("#tab").append(s);

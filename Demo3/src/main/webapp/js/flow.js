@@ -39,7 +39,7 @@ $("#sure_in").click(function () {
     var total = $("#in_totle").val();
 
     var user = {};
-    user.date = date;
+    user.flowDate = date;
     user.supplyOrDemand = name;
     user.count = count;
     user.productName = productname;
@@ -54,18 +54,25 @@ $("#sure_in").click(function () {
         data:JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
-            alert("添加成功！");
-            $("#in_date").val("");
-            $("#in_name").val("");
-            $("#in_count").val("");
-            $("#in_product").val("");
-            $("#in_type").val("");
-            $("#in_money").val("");
-            $("#in_money_i").val("");
-            $("#in_totle").val("");
+            if(data.msg === "don't have this supplier"){
+                alert("没有该供应商");
+            } else if(data.msg === "success"){
+                alert("入库成功！");
+                $("#out_date").val("");
+                $("#out_name").val("");
+                $("#out_count").val("");
+                $("#out_product").val("");
+                $("#out_type").val("");
+                $("#out_money").val("");
+                $("#out_money_o").val("");
+                $("#out_totle").val("");
+            }
+            else {
+                alert("没有该供应商");
+            }
         },
         error:function () {
-            alert("添加失败!");
+            alert("添加记录失败!");
 
         }
     })
@@ -105,9 +112,8 @@ $("#sure_out").click(function () {
     var money = $("#out_money").val();
     var moneyo = $("#out_money_o").val();
     var total = $("#out_totle").val();
-
     var user = {};
-    user.date = date;
+    user.flowDate = date;
     user.supplyOrDemand = name;
     user.count = count;
     user.productName = productname;
@@ -126,8 +132,10 @@ $("#sure_out").click(function () {
                 alert("没有该产品");
             }else if(data.msg === "don't have enough stocks"){
                 alert("产品数量不足");
-            }else {
-                alert("添加成功！");
+            }else if(data.msg === "don't have this client"){
+                alert("没有该客户");
+            } else if(data.msg === "success"){
+                alert("出库成功！");
                 $("#out_date").val("");
                 $("#out_name").val("");
                 $("#out_count").val("");
@@ -137,9 +145,12 @@ $("#sure_out").click(function () {
                 $("#out_money_o").val("");
                 $("#out_totle").val("");
             }
+            else {
+                alert("没有该产品或数量不足");
+            }
         },
         error:function () {
-            alert("添加失败!");
+            alert("添加记录失败!");
 
         }
     })

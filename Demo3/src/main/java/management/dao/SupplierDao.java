@@ -10,5 +10,5 @@ public interface SupplierDao {
     List<Supplier> showSupplier();
     int addSupplier(Supplier supplier);
     int removeSupplier(Supplier supplier);
-    Supplier findSupplier(Supplier supplier);
+    List<Supplier> findSupplier(Supplier supplier);
 }

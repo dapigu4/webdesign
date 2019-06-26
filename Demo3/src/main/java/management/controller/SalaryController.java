@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -27,5 +30,15 @@ public class SalaryController {
     @ResponseBody
     public Map add(@RequestBody Salary salary){
         return salaryService.addSalary(salary);
+    }
+
+    @RequestMapping("/test")
+    @ResponseBody
+    public List<Salary> test() throws ParseException {
+        Salary salary = new Salary();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = simpleDateFormat.parse("2019-6-1");
+        salary.setSalaryDate(date);
+        return salaryService.showSalary(salary);
     }
 }

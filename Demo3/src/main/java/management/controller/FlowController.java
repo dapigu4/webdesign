@@ -20,8 +20,8 @@ public class FlowController {
 
     @RequestMapping("/flowlist")
     @ResponseBody
-    public List<Flow> flowList(){//查看仓库
-        return flowService.showFlow();
+    public List<Flow> flowList(@RequestBody Flow flow){//查看仓库
+        return flowService.showFlow(flow);
     }
 
     @RequestMapping("/input")

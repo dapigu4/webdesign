@@ -6,7 +6,7 @@
     <!--    用作登录-->
     <resultMap id="flowResultMap" type="Flow">
         <id property="id" column="id"/>
-        <id property="date" column="date"/>
+        <id property="flowDate" column="flow_date"/>
         <id property="inOrOut" column="in_out"/>
         <id property="supplyOrDemand" column="supply_demand"/>
         <id property="productName" column="product_name"/>
@@ -17,10 +17,10 @@
         <id property="total" column="total"/>
     </resultMap>
     <insert id="flowInputOrOutput" parameterType="management.pojo.Flow">
-        insert into flow value (NULL,#{date},#{inOrOut},#{supplyOrDemand},#{productName},#{size},#{perCost},#{perSell},#{count},#{total})
+        insert into flow value (NULL,#{flowDate},#{inOrOut},#{supplyOrDemand},#{productName},#{size},#{perCost},#{perSell},#{count},#{total})
     </insert>
 
-    <select id="showFlow" resultMap="flowResultMap">
-        select * from flow
+    <select id="showFlow" resultMap="flowResultMap" parameterType="Flow">
+        select * from flow where date_format(flow_date,'%Y-%m') = date_format(#{flowDate},'%Y-%m')
     </select>
 </mapper>
