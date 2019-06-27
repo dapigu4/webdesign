@@ -9,4 +9,5 @@ public interface BalanceService {
     Map addBalanceIncome(Balance balance);
     Map addBalanceExpenditure(Balance balance);
     List<Balance> showBalanceByYearAndMonth(Balance balance);
+    List<Balance> showBalanceOnCharts();
 }

@@ -34,5 +34,11 @@ public class BalanceController {
     public List<Balance> showBalance(@RequestBody Balance balance){
         return balanceService.showBalanceByYearAndMonth(balance);
     }
+
+    @RequestMapping("/balancechart")
+    @ResponseBody
+    public List<Balance> balancechart(){
+        return balanceService.showBalanceOnCharts();
+    }
 }
 

@@ -7,129 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bfd244c-4d5b-4599-9005-cb094840e53f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/management/controller/BackupAndRestoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/management/dao/BackupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/management/dao/RestoreDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/management/mapping/BackupMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/management/mapping/RestoreMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/management/pojo/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/management/service/BackupAndRestoreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/management/service/impl/BackupAndRestoreServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/management/test/BackupAndRestoreMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/management/interceptor/CheckLoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/management/interceptor/CheckLoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/font-awesome/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/device.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/device.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayincome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayincome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/flow.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/flow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/forgetpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/forgetpassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/income.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/income.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/management/controller/BalanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/management/controller/BalanceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/management/dao/BalanceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/management/dao/BalanceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/management/mapping/BalanceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/management/mapping/BalanceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/management/pojo/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/management/pojo/Balance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/management/service/BalanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/management/service/BalanceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/management/service/impl/BalanceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/management/service/impl/BalanceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/management/test/BalanceMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/management/test/BalanceMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/modifypassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/modifypassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/salary.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/salary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/staff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/supplier.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/supplier.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/warehouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/warehouse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/userinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/userinfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Demo3.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/controller/AdministratorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/controller/AdministratorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/controller/FlowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/controller/FlowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/controller/StaffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/dao/AdministratorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/dao/AdministratorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/dao/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/dao/ClientDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/dao/FlowDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/dao/FlowDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/dao/SupplierDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/dao/SupplierDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/interceptor/CheckLoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/interceptor/CheckLoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/mapping/AdministratorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/mapping/AdministratorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/mapping/FlowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/mapping/FlowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/pojo/Administrator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/pojo/Administrator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/pojo/Flow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/pojo/Flow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/AdministratorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/AdministratorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/FlowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/FlowService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/StaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/AdministratorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/AdministratorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/ClientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/ClientServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/FlowServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/FlowServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/StaffServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/SupplierServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/service/impl/SupplierServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/test/AdministratorMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/test/AdministratorMapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/test/FlowAndWarehouseMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/test/FlowAndWarehouseMapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/test/SupplierMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/management/test/SupplierMapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/device.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/device.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/displayincome.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/displayincome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/flow.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/flow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/forgetpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/forgetpassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/income.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/income.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/device.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/device.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/displayincome.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/displayincome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/flow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/income.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/income.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/staff.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/staff.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/supplier.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/supplier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/userinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/userinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/js/warehouse.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/js/warehouse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/staff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/supplier.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/supplier.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Demo3/warehouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/warehouse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/controller/AdministratorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/controller/AdministratorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/controller/FlowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/controller/FlowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/controller/SalaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/controller/SalaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/controller/StaffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/dao/AdministratorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/dao/AdministratorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/dao/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/dao/ClientDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/dao/FlowDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/dao/FlowDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/dao/SupplierDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/dao/SupplierDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/interceptor/CheckLoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/interceptor/CheckLoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/mapping/AdministratorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/mapping/AdministratorMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/mapping/FlowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/mapping/FlowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/pojo/Administrator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/pojo/Administrator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/pojo/Flow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/pojo/Flow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/pojo/Salary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/pojo/Salary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/service/AdministratorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/service/AdministratorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/service/FlowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/service/FlowService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/service/StaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/service/impl/AdministratorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/service/impl/AdministratorServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/service/impl/ClientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/service/impl/ClientServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/service/impl/FlowServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/service/impl/FlowServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/service/impl/SalaryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/service/impl/SalaryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/service/impl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/service/impl/StaffServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/service/impl/SupplierServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/service/impl/SupplierServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/test/AdministratorMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/test/AdministratorMapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/test/FlowAndWarehouseMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/test/FlowAndWarehouseMapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/management/test/SupplierMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/management/test/SupplierMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/classes/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Demo3/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo3/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Demo3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dispatcher-servlet.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -159,28 +61,77 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/userinfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/management/interceptor/CheckLoginInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="315">
+              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5503">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="698">
+              <caret line="313" column="34" lean-forward="true" selection-start-line="313" selection-start-column="34" selection-end-line="313" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Balance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/BalanceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+              <folding>
+                <element signature="e#1200#1201#0" expanded="true" />
+                <element signature="e#1266#1267#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/BalanceServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="65" column="34" lean-forward="true" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/test/BalanceMapperTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/management/service/BalanceService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -205,6 +156,7 @@
       <find>eot</find>
       <find>r</find>
       <find>icon</find>
+      <find>toLocaleDateString</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -220,23 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/SupplierServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/management/dao/ClientDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/ClientServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/management/pojo/Flow.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/warehouse.js" />
-        <option value="$PROJECT_DIR$/src/main/java/management/dao/FlowDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/management/mapping/FlowMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/management/service/FlowService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/management/controller/FlowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/management/test/FlowAndWarehouseMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/FlowServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/flow.js" />
-        <option value="$PROJECT_DIR$/src/main/java/management/mapping/BalanceMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/displayincome.js" />
-        <option value="$PROJECT_DIR$/src/main/java/management/controller/BalanceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/BalanceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/management/test/BalanceMapperTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/income.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/salary.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/staff.js" />
@@ -252,10 +187,7 @@
         <option value="$PROJECT_DIR$/src/main/java/management/service/impl/AdministratorServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/management/test/AdministratorMapperTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/modifypassword.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/userinfo.js" />
         <option value="$PROJECT_DIR$/src/main/java/management/controller/AdministratorController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/client.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/device.html" />
@@ -263,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/flow.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/forgetpassword.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/income.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/product.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/modifypassword.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/salary.html" />
@@ -271,6 +202,27 @@
         <option value="$PROJECT_DIR$/src/main/webapp/supplier.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/warehouse.html" />
         <option value="$PROJECT_DIR$/src/main/java/management/interceptor/CheckLoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/pojo/Table.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/dao/RestoreDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/mapping/RestoreMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/BackupAndRestoreService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/dao/BackupDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/mapping/BackupMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/BackupAndRestoreServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/test/BackupAndRestoreMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/controller/BackupAndRestoreController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/userinfo.js" />
+        <option value="$PROJECT_DIR$/src/main/java/management/pojo/Balance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/dao/BalanceDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/mapping/BalanceMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/BalanceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/controller/BalanceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/service/impl/BalanceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/management/test/BalanceMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
       </list>
     </option>
   </component>
@@ -296,9 +248,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="115" />
+    <option name="x" value="147" />
     <option name="y" value="-29" />
-    <option name="width" value="1559" />
+    <option name="width" value="1793" />
     <option name="height" value="1103" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -349,7 +301,62 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="management" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
@@ -371,23 +378,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="font-awesome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="font-awesome" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -398,30 +388,19 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Demo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="Demo3" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -431,19 +410,19 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\git\Git\totalRepository\webdesign\Demo3\src\main\webapp\js" />
+      <recent name="F:\git\Git\totalRepository\webdesign\Demo3\src\main\webapp" />
+      <recent name="F:\git\Git\totalRepository\webdesign\Demo3\src\main\webapp\css" />
+      <recent name="F:\git\Git\totalRepository\webdesign\Demo3\src\main\webapp\css\font-awesome" />
+      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\git\Git\totalRepository\webdesign\Demo3\src\main\webapp\css" />
       <recent name="F:\java\ideaProject\Demo3\src\main\webapp" />
       <recent name="F:\java\ideaProject\Demo3\src\main\webapp\WEB-INF" />
       <recent name="F:\java\ideaProject\Demo3\src\main\webapp\WEB-INF\views" />
       <recent name="F:\java\ideaProject\Demo3\src\main\webapp\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\git\Git\totalRepository\webdesign\Demo3\src\main\webapp" />
-      <recent name="F:\git\Git\totalRepository\webdesign\Demo3\src\main\webapp\css" />
-      <recent name="F:\git\Git\totalRepository\webdesign\Demo3\src\main\webapp\css\font-awesome" />
-      <recent name="F:\java\ideaProject\Demo3\src\main\webapp\js" />
-      <recent name="F:\java\ideaProject\Demo3\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -475,6 +454,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BackupAndRestoreMapperTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="management.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="management.test" />
+      <option name="MAIN_CLASS_NAME" value="management.test.BackupAndRestoreMapperTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackupAndRestoreMapperTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="management.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="management.test" />
+      <option name="MAIN_CLASS_NAME" value="management.test.BackupAndRestoreMapperTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BalanceMapperTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Demo3" />
       <extension name="coverage">
@@ -491,7 +502,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BalanceMapperTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BalanceMapperTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Demo3" />
       <extension name="coverage">
         <pattern>
@@ -501,38 +512,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="management.test" />
       <option name="MAIN_CLASS_NAME" value="management.test.BalanceMapperTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlowAndWarehouseMapperTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Demo3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="management.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="management.test" />
-      <option name="MAIN_CLASS_NAME" value="management.test.FlowAndWarehouseMapperTest" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SupplierMapperTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Demo3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="management.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="management.test" />
-      <option name="MAIN_CLASS_NAME" value="management.test.SupplierMapperTest" />
       <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -613,20 +592,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BalanceMapperTest.test3" />
-      <item itemvalue="JUnit.SupplierMapperTest.test4" />
-      <item itemvalue="JUnit.FlowAndWarehouseMapperTest.test4" />
       <item itemvalue="JUnit.BalanceMapperTest.test1" />
       <item itemvalue="JUnit.AdministratorMapperTest.Test3" />
       <item itemvalue="Tomcat Server.Tomcat 7.0.91" />
+      <item itemvalue="JUnit.BackupAndRestoreMapperTest.test1" />
+      <item itemvalue="JUnit.BackupAndRestoreMapperTest.test2" />
+      <item itemvalue="JUnit.BalanceMapperTest.test4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BalanceMapperTest.test4" />
+        <item itemvalue="JUnit.BackupAndRestoreMapperTest.test2" />
+        <item itemvalue="JUnit.BackupAndRestoreMapperTest.test1" />
         <item itemvalue="JUnit.AdministratorMapperTest.Test3" />
         <item itemvalue="JUnit.BalanceMapperTest.test1" />
-        <item itemvalue="JUnit.BalanceMapperTest.test3" />
-        <item itemvalue="JUnit.FlowAndWarehouseMapperTest.test4" />
-        <item itemvalue="JUnit.SupplierMapperTest.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -665,7 +644,8 @@
       <workItem from="1561538875039" duration="3777000" />
       <workItem from="1561544299169" duration="414000" />
       <workItem from="1561609376751" duration="3010000" />
-      <workItem from="1561612444505" duration="795000" />
+      <workItem from="1561612444505" duration="1753000" />
+      <workItem from="1561622696095" duration="17287000" />
     </task>
     <task id="LOCAL-00001" summary="新增 收支的字体颜色">
       <created>1561540539437</created>
@@ -681,43 +661,50 @@
       <option name="project" value="LOCAL" />
       <updated>1561565567845</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="还差 图表 备份">
+      <created>1561613582407</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561613582407</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FlowAndWarehouseMapperTest_test4 - 2019.06.26 at 21h 18m 06s.xml">
-      <configuration name="FlowAndWarehouseMapperTest.test4" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 20h 36m 57s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowAndWarehouseMapperTest_test4 - 2019.06.26 at 21h 22m 52s.xml">
-      <configuration name="FlowAndWarehouseMapperTest.test4" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 20h 37m 29s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FlowAndWarehouseMapperTest_test4 - 2019.06.26 at 21h 24m 00s.xml">
-      <configuration name="FlowAndWarehouseMapperTest.test4" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 20h 47m 26s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BalanceMapperTest_test3 - 2019.06.26 at 21h 41m 57s.xml">
-      <configuration name="BalanceMapperTest.test3" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 20h 50m 06s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BalanceMapperTest_test1 - 2019.06.26 at 21h 54m 17s.xml">
-      <configuration name="BalanceMapperTest.test1" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 21h 00m 27s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BalanceMapperTest_test1 - 2019.06.26 at 21h 55m 11s.xml">
-      <configuration name="BalanceMapperTest.test1" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 21h 00m 49s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BalanceMapperTest_test1 - 2019.06.26 at 21h 57m 46s.xml">
-      <configuration name="BalanceMapperTest.test1" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 21h 01m 15s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdministratorMapperTest_Test3 - 2019.06.26 at 23h 00m 24s.xml">
-      <configuration name="AdministratorMapperTest.Test3" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 21h 07m 00s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdministratorMapperTest_Test3 - 2019.06.26 at 23h 02m 53s.xml">
-      <configuration name="AdministratorMapperTest.Test3" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 21h 07m 51s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdministratorMapperTest_Test3 - 2019.06.26 at 23h 51m 51s.xml">
-      <configuration name="AdministratorMapperTest.Test3" configurationId="JUnit" />
+    <history-entry file="BalanceMapperTest_test4 - 2019.06.27 at 21h 25m 20s.xml">
+      <configuration name="BalanceMapperTest.test4" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213958000" />
+    <option name="totallyTimeSpent" value="232203000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -729,10 +716,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="162" y="4" width="1247" height="882" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3212784" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25938338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -742,18 +729,18 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32673267" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933156" visible="true" weight="0.316" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933156" visible="true" weight="0.18271954" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32781956" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32750398" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.3290938" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3290938" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32719547" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32719547" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50066847" side_tool="true" weight="0.37443608" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3101983" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.3338983" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -784,247 +771,13 @@
     <MESSAGE value="把Income表和Expenditure表和为Balance表&#10;Salary可以按年+月查询" />
     <MESSAGE value="新增 收支的字体颜色" />
     <MESSAGE value="还差图标 图表 备份" />
-    <option name="LAST_COMMIT_MESSAGE" value="还差图标 图表 备份" />
+    <MESSAGE value="还差 图表 备份" />
+    <option name="LAST_COMMIT_MESSAGE" value="还差 图表 备份" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="84" column="10" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/flow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1032">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/income.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/retrieve.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1710">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/AdministratorDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/util/UserContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/staff.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="115" column="48" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Flow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/AdministratorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-3.4.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1114">
-          <caret line="8191" column="4" selection-start-line="8191" selection-start-column="4" selection-end-line="8191" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/AdministratorMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="53" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/BalanceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/ClientServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/DeviceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/FlowServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="48" column="56" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/SalaryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/StaffServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/SupplierServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/AdministratorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/AdministratorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
-          <folding>
-            <element signature="e#1836#1837#0" expanded="true" />
-            <element signature="e#1893#1894#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/test/AdministratorMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/modifypassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3933">
-          <caret line="207" column="24" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Administrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/font-awesome/fonts/fontawesome-webfont.svg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/userinfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-614">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/font-awesome/css/font-awesome.min.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/Demo3/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1368" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/Demo3/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/font-awesome/css/font-awesome.css" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/font-awesome/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/device.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1051,13 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/income.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1110,24 +856,290 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/interceptor/CheckLoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5503">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="133">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/SalaryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="20" column="9" lean-forward="true" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/BackupAndRestore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/BackupDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/BackupAndRestoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/RestoreDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/RestoreMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/test/BackupAndRestoreMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/BackupAndRestoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/BackupMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/BackupAndRestoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/mapping/BalanceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="24" column="158" selection-start-line="24" selection-start-column="158" selection-end-line="24" selection-end-column="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/dao/BalanceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/income.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/client.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        <state relative-caret-position="-57">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/management/interceptor/CheckLoginInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/warehouse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/supplier.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="15" selection-end-column="9" />
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/staff.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/script.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/salary.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/flow.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/displayincome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#th#2;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/modifypassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1482" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/AdministratorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/AdministratorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/userinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/BalanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/controller/BalanceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding>
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/test/BalanceMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/pojo/Balance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/management/service/impl/BalanceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="65" column="34" lean-forward="true" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="698">
+          <caret line="313" column="34" lean-forward="true" selection-start-line="313" selection-start-column="34" selection-end-line="313" selection-end-column="34" />
         </state>
       </provider>
     </entry>

@@ -20,4 +20,8 @@
     <insert id="addBalanceExpenditure" parameterType="Balance">
         insert into balance value (NULL,#{balanceDate},#{balanceDetails},#{balanceMoney})
     </insert>
+
+    <select id="showBalanceOnCharts"  resultMap="balanceResultMap">
+        SELECT date_format(balance_date,'%Y%m') as balance_date,sum(balance_money) as balance_money FROM balance where year(balance_date) = year(#{balanceDate}) group by date_format(balance_date,'%Y%m')
+    </select>
 </mapper>

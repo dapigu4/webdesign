@@ -10,4 +10,5 @@ public interface BalanceDao {
     int addBalanceIncome(Balance balance);
     int addBalanceExpenditure(Balance balance);
     List<Balance> showBalanceByYearAndMonth(Balance balance);
+    List<Balance> showBalanceOnCharts(Balance balance);
 }

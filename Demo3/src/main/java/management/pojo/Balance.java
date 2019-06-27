@@ -44,4 +44,14 @@ public class Balance {
     public void setBalanceMoney(Double balanceMoney) {
         this.balanceMoney = balanceMoney;
     }
+
+    @Override
+    public String toString() {
+        return "Balance{" +
+                "id=" + id +
+                ", balanceDate=" + balanceDate +
+                ", balanceDetails='" + balanceDetails + '\'' +
+                ", balanceMoney=" + balanceMoney +
+                '}';
+    }
 }

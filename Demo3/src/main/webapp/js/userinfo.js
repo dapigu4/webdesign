@@ -40,7 +40,7 @@ $("#btn_backup").click(function () {
    var user = {};
    user.start = "start";
    $.ajax({
-      url:"",
+      url:"http://localhost:8080/backupandrestore/backup",
       type:"post",
       dataType:"json",
       data:JSON.stringify(user),
@@ -64,7 +64,7 @@ $("#btn_reduction").click(function () {
    var user = {};
    user.start = "start";
    $.ajax({
-      url:"",
+      url:"http://localhost:8080/backupandrestore/restore",
       type:"post",
       dataType:"json",
       data:JSON.stringify(user),
