@@ -57,8 +57,22 @@ $("#sure_add").click(function () {
         dataType: "json",
         data: JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
-        success: function () {
-
+        success: function (data) {
+            if(data.msg === "success"){
+                alert("增加成功");
+                $("#date").val("");
+                $("#name").val("");
+                $("#sex").val("");
+                $("#phone").val("");
+                $("#mail").val("");
+                $("#address").val("");
+            }
+            else {
+                alert("增加失败")
+            }
+        },
+        error:function () {
+            alert("oh gg ");
         }
     })
 });
@@ -80,7 +94,7 @@ $("#btn_sub").click(function () {
             data: JSON.stringify(user),
             contentType:"application/json;charset=utf-8",
             success: function (data) {
-                if (data.msg === "") {
+                if (data.msg === "fail") {
                     $("#con_sub").html("该员工不存在，请确认员工编号无误");
                     $("#close_sub").show();
                     $("#sure_sub").hide();
@@ -105,7 +119,10 @@ $("#sure_sub").click(function () {
         data: JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success: function (data) {
-            alert("删除成功");
+            if (data === "success"){
+                alert("删除成功");
+                $("#number").val("");
+            }
         }
     })
 });

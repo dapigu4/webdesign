@@ -76,7 +76,12 @@ $("#sure_add").click(function () {
         data:JSON.stringify(user),
         contentType:"application/json;charset=utf-8",
         success:function (data) {
-            alert("增加成功！")
+            alert("增加成功！");
+            $("#product_name").val("");
+            $("#product_type").val("");
+            $("#in_money").val("");
+            $("#out_money").val("");
+            $("#income").val("");
         },
         error:function () {
             alert("增加失败");

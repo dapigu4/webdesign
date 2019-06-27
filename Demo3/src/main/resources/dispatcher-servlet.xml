@@ -41,6 +41,7 @@
             <mvc:exclude-mapping path="/js/**"/>
             <mvc:exclude-mapping path="/images/**"/>
             <mvc:exclude-mapping path="/css/**"/>
+            <mvc:exclude-mapping path="/font-awesome/**"/>
             <bean class="management.interceptor.CheckLoginInterceptor"/>
 
         </mvc:interceptor>

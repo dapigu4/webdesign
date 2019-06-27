@@ -12,11 +12,11 @@ $("#btn").click(function () {
         dataType:"json",
         success:function (data) {
             //$("#test").innerText=data.username;
-            if(data.msg === "fail"){
+            if(data.msg === ""){
                 alert("密码或用户名不正确");
             }
             else {
-                sessionStorage.setItem("username",data.account);
+                sessionStorage.setItem("username",data.msg);
                 window.location.href="http://localhost:8080/index.html";
             }
         },

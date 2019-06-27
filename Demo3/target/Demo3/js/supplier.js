@@ -99,6 +99,12 @@ $("#sure_add").click(function () {
         success:function (data) {
             if(data.msg === "success"){
                 alert("增加成功！");
+                $("#supname").val("");
+                $("#name").val("");
+                $("#sex").val("");
+                $("#phone").val("");
+                $("#mail").val("");
+                $("#address").val("");
             }
             else {
                 alert("增加失败");
@@ -159,6 +165,7 @@ $("#sure_sub").click(function () {
         contentType:"application/json;charset=utf-8",
         success:function (data) {
             alert("删除成功！")
+            $("#n").val("");
         },
         error:function () {
             alert("删除失败");

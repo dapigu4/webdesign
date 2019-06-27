@@ -100,7 +100,13 @@ $("#sure_add").click(function () {
             if(data.msg === "fail"){
                 alert("增加失败");
             }else {
-                alert("增加成功！")
+                alert("增加成功！");
+                $("#cliname").val("");
+                $("#name").val("");
+                $("#sex").val("");
+                $("#phone").val("");
+                $("#mail").val("");
+                $("#address").val("");
             }
 
         },
@@ -162,6 +168,7 @@ $("#sure_sub").click(function () {
                 alert("删除失败");
             }else {
                 alert("删除成功！")
+                $("#n").val("");
             }
 
         },

@@ -21,23 +21,35 @@ $("#btn_i").click(function () {
 });
 //提交数据
 $("#sub_i").click(function () {
-    /*var day = $("#time_i").val();
+    var day = $("#time_i").val();
     var money = $("#money_i").val();
     var info = $("#info_i").val();
     var user = {};
-    user.day = day;                                                    //==================*********************
-    user.money = money;
-    user.info = info;
+    user.balanceDate = day;                                                    //==================*********************
+    user.balanceMoney = money;
+    user.balanceDetails = info;
     $.ajax({
-        url:"",
+        url:"http://localhost:8080/balance/addIncome",
         type:"post",
         dataType:"json",
         data:JSON.stringify(user),
+        contentType:"application/json;charset=utf-8",
         success:function (data) {
-
+            if(data.msg === "success"){
+                alert("提交成功");
+                $("#time_i").val("");
+                $("#money_i").val("");
+                $("#info_i").val("");
+            }
+            else {
+                alert("提交失败");
+            }
+        },
+        error:function () {
+            alert("哦吼 完蛋");
         }
-    });*/
-    alert("提交成功");
+    });
+
 });
 
 
@@ -54,31 +66,45 @@ $("#btn_o").click(function () {
         $("#sub_o").hide();
     }
     else {
-        $("#con_o").html("确定提交该收入明细");
+        $("#con_o").html("确定提交该支出明细");
         $("#close_o").html("取消");
         $("#sure_o").hide();
         $("#sub_o").show();
     }
 });
+
+
 //提交数据
 $("#sub_o").click(function () {
-    /*var day = $("#time_i").val();
-    var money = $("#money_i").val();
-    var info = $("#info_i").val();
+    var day = $("#time_o").val();
+    var money = $("#money_o").val();
+    var info = $("#info_o").val();
     var user = {};
-    user.day = day;                                                      //==================*********************
-    user.money = money;
-    user.info = info;
+    user.balanceDate = day;                                                      //==================*********************
+    user.balanceMoney = money;
+    user.balanceDetails = info;
     $.ajax({
-        url:"",
+        url:"http://localhost:8080/balance/addExpenditure",
         type:"post",
         dataType:"json",
         data:JSON.stringify(user),
+        contentType:"application/json;charset=utf-8",
         success:function (data) {
-
+            if(data.msg === "success"){
+                $("#time_o").val("");
+                $("#money_o").val("");
+                $("#info_o").val("");
+                alert("提交成功");
+            }
+            else {
+                alert("提交失败");
+            }
+        },
+        error:function () {
+            alert("哦吼 完蛋");
         }
-    });*/
-    alert("提交成功");
+    });
+
 });
 
 //获取时间
