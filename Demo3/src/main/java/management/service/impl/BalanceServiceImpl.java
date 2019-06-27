@@ -55,21 +55,14 @@ public class BalanceServiceImpl implements BalanceService {
         System.out.println(balance.getBalanceDate());
         List<Balance> list = balanceDao.showBalanceOnCharts(balance);
         List<Balance> list1 = new ArrayList<>();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
-        String month;
-        int index;
             for (int i = 0; i < 12; i++) {
                 Balance balance1 = new Balance();
                 balance1.setBalanceMoney(0.0);
                 list1.add(balance1);
             }
             for (Balance b:list) {
-                month = simpleDateFormat.format(b.getBalanceDate()).substring(6,8);
-                System.out.println(month);
-                index = Integer.valueOf(month);
-                list1.get(index-1).setBalanceMoney(b.getBalanceMoney());
+                list1.get(b.getId()-1).setBalanceMoney(b.getBalanceMoney());
             }
         return list1;
-
     }
 }

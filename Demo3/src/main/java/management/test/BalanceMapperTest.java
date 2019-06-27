@@ -49,11 +49,7 @@ public class BalanceMapperTest {
     }
 
     @Test
-    public void test4() throws  ParseException{
-        Balance balance = new Balance();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = simpleDateFormat.parse("2019-1-1");
-        balance.setBalanceDate(date);
+    public void test4() {
         for (Balance b:balanceService.showBalanceOnCharts()) {
             System.out.println(b);
         }

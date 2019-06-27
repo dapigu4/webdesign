@@ -3,7 +3,7 @@ $(document).ready(function () {
     var list;
    // 收支对比
     var incomechart = $("#income_chart");
-
+    console.log(123543532)
     if (incomechart.length > 0){
         $.ajax({
             url: "http://localhost:8080/balance/balancechart",
