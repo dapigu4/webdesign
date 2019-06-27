@@ -1,1 +1,2 @@
-test
+发现能让图表出来的办法（在index.js里的ready下加入consle.log(随便什么东西)）
+具体为什么还没找到原因
